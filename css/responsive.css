@@ -578,7 +578,7 @@ footer .copyrights{
 
 @media (max-width:1500px){
     .hero{
-        height: 800px;
+        height: 500px;
     }
 }
 
@@ -588,6 +588,7 @@ footer .copyrights{
         padding: 0 40px;
         max-width: 1020px;
     }
+    /* Area Busqueda
     .search .advanced_search .arrow{
         top: -8px;
         right: 46px;
@@ -611,15 +612,9 @@ footer .copyrights{
         width: 96.36363636363636%;
         padding: 0 1.818181818181818%;
     }
+*/
 
-    footer .footer > ul > li{
-        margin-right: 5.454545454545455%;
-    }
-
-    footer .footer > ul > li.links{
-        width: 17.90909090909091%;
-    }
-
+  
     footer .footer > ul > li.about{
         width: 29.72727272727273%;
     }
@@ -673,20 +668,6 @@ footer .copyrights{
         background: #f2f3f3;
     }
 
-    header nav ul{
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: 0;
-    }
-
-    header nav ul li{
-        display: block;
-        width: 100%;
-        float: none;
-        margin-left: 0;
-    }
-
     header nav ul li a{
         display: block;
         padding: 25px 0;
@@ -736,10 +717,6 @@ footer .copyrights{
 
     footer .footer > ul > li:nth-child(3){
         margin-right: 0;
-    }
-
-    footer .footer > ul > li.links li a{
-        text-align: center;
     }
 
     footer .footer > ul > li.about{
