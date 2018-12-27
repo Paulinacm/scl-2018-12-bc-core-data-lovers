@@ -5,7 +5,7 @@
 };
 
 window.example = example;*/
-
+/*
 const dataPokemon = POKEMON.pokemon;
 console.log(dataPokemon);
 
@@ -13,3 +13,4 @@ const nombrePokemones = (dataPokemon) =>{
   console.log(dataPokemon)
 }
 nombrePokemones(dataPokemon);
+*/
