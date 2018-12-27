@@ -151,40 +151,14 @@ header nav .login_btn:hover{
 }
 
 .hero .caption{
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
+    width: 20%;
+    height: 200px;
+    position: relative;
+    
+    top: 30%;
     margin-top: -105px;
     z-index: 10;
 }
-
-.hero .caption h2{
-    color: #fff;
-    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
-    font-size: 100px;
-    font-weight: lighter;
-    margin: 0;
-    position: relative;
-    display: block;
-}
-
-.hero .caption h3{
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin: -15px 0 0 25px;
-    left: 1px;
-}
-
-
-
-
-
-
-
-
-
 
 /*  Search Section */
 .search{
@@ -580,6 +554,12 @@ footer .copyrights{
     .hero{
         height: 500px;
     }
+
+    .hero .caption{
+        width: 60%;
+        padding: 0 18%; 
+        position: relative;
+    }
 }
 
 
@@ -631,11 +611,7 @@ footer .copyrights{
         padding: 0 3.636363636363636%; 
     }
 
-    .hero .caption h3{
-        margin: 0;
-        left: 0;
-    }
-
+    
     header a.hamburger{
         display: block;
     }
@@ -732,6 +708,12 @@ footer .copyrights{
 
 @media (max-width:700px){
 
+
+    .hero .caption{
+        width: 85%;
+        padding: 0 5%; 
+    }
+
     .search .advanced_search #check_in_date,
     .search .advanced_search #check_out_date,
     .search .advanced_search #min_price,
@@ -763,13 +745,6 @@ footer .copyrights{
 
 
 @media (max-width:500px){
-    .hero .caption h2{
-        font-size: 85px;
-    }
-
-    .hero .caption h3{
-        font-size: 16px;
-    }
 
     .search #search{
         width: 83%;
