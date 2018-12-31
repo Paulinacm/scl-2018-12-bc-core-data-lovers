@@ -1,13 +1,34 @@
-
 let pokemonApi = fetch('./data/pokemon/pokemon.json')
 
 let dataPokemon = document.getElementById("pokemones")
- 
+
 pokemonApi.then(result => {
-    return result.json();
-  }).then(result => {
-    let arrElementos = [];
-    console.log(result)
+  return result.json();
+}).then(result => {
+  let arrElementos = [];
+  result.pokemon.forEach(element => {
+    let divPokemon = document.createElement("div")
+    let namePokemon = document.createTextNode(element.name)
+    divPokemon.appendChild(namePokemon)
+    dataPokemon.appendChild(divPokemon)
+   let imagePokemon = document.createElement("img")
+   imagePokemon.setAttribute("src",element.img)
+   divPokemon.appendChild(imagePokemon)
+   dataPokemon.appendChild(divPokemon)
+
+   let elementPokemon = document.createTextNode(element.type)
+   divPokemon.appendChild(elementPokemon)
+   dataPokemon.appendChild(divPokemon)
+   let numPokemon = document.createTextNode(element.num)
+   divPokemon.appendChild(numPokemon)
+   dataPokemon.appendChild(divPokemon)
+   
+  });
+}).catch(err => {
+});
+
+
+
     /*
     arrElementos = [...new Set(arrElementos)]
     arrElementos.sort(function(a, b){
@@ -20,7 +41,7 @@ pokemonApi.then(result => {
 
     return arrElementos;
     */
-})
+
 /*
 .then(result => {
     if (result.length > 0) {
