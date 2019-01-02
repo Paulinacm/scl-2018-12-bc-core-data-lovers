@@ -152,32 +152,11 @@ header nav .login_btn:hover{
 
 .hero .caption{
     width: 20%;
-    height: 200px;
-    position: relative;
-    
-    top: 30%;
-    margin-top: -105px;
-    z-index: 10;
+    height: 20%;
+    position: center;
+    background-image: url('../img/logopokemon.png');
 }
 
-
-.hero .caption h2{
-    color: #fff;
-    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
-    font-size: 100px;
-    font-weight: lighter;
-    margin: 0;
-    position: relative;
-    display: block;
-}
-
-.hero .caption h3{
-    color: #fff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    margin: -15px 0 0 25px;
-    left: 1px;
-}
 
 
 
@@ -212,172 +191,6 @@ header nav .login_btn:hover{
    color: #95badf;
 }
 
-/*
-.search #search:-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search #search::-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search #search:-ms-input-placeholder{  
-   color: #95badf;  
-} 
-
-.search #submit_search{
-    display: none;
-}
-
-.search .advanced_search_icon{
-    display: block;
-    width: 26px;
-    height: 26px;
-    float: right;
-    background: url('../img/advanced_search_inactive.png') no-repeat;
-    margin-top: 37px;
-
-    transition: all .2s linear;
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -o-transition: all .2s linear;
-}
-
-.search .advanced_search_icon:hover{
-    background: url('../img/advanced_search_hover.png') no-repeat;
-}
-
-.search .advanced_search_icon.active{
-    background: url('../img/advanced_search_active.png') no-repeat;
-}
-
-
-
-
-
-
-
-.search .advanced_search{
-    width: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background: #cbe0f4;
-    border-top: 1px solid #aac8e4;
-    border-bottom: 1px solid #aac8e4;
-    z-index: 9999;
-    display: none;
-}
-
-.search .advanced_search .arrow{
-    display: block;
-    width: 14px;
-    height: 9px;
-    background: url('../img/search_arrow.png') no-repeat;
-    position: absolute;
-    top: -8px;
-    right: 6px;
-}
-
-.search .advanced_search #check_in_date,
-.search .advanced_search #check_out_date,
-.search .advanced_search #min_price,
-.search .advanced_search #max_price{
-    display: block;
-    width: 509px;
-    height: 100px;
-    border: 0;
-    margin: 0;
-    padding: 0 20px;
-    outline: none;
-    background: #cbe0f4;
-}
-
-.search .advanced_search #check_in_date,
-.search .advanced_search #check_out_date{
-    background: url('../img/calendar_icon.png') no-repeat;
-    background-position: 484px 50%;
-    padding: 0 100px 0 20px;
-    width: 429px;
-}
-
-.search .advanced_search .float{
-    float: left;
-}
-
-.search .advanced_search .search_fields{
-    overflow: hidden;
-    border-bottom: 1px solid #aac8e4;
-}
-
-.search .advanced_search .field_sep{
-    display: inline-block;
-    width: 1px;
-    height: 60px;
-    border: 0;
-    background: #aac8e4;
-    margin: 20px 0 0 0;
-    padding: 0;
-}
-
-.search .advanced_search #keywords{
-    display: block;
-    width: 1060px;
-    height: 100px;
-    border: 0;
-    margin: 0;
-    padding: 0 20px;
-    outline: none;
-    background: #cbe0f4;
-}
-
-.search .advanced_search #check_in_date,
-.search .advanced_search #check_out_date,
-.search .advanced_search #min_price,
-.search .advanced_search #max_price,
-.search .advanced_search #keywords{    
-    color: #ffffff;
-    font-family: "lato-regular", Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 22px;
-} 
-
-
-.search .advanced_search #check_in_date::-webkit-input-placeholder,
-.search .advanced_search #check_out_date::-webkit-input-placeholder,
-.search .advanced_search #min_price::-webkit-input-placeholder,
-.search .advanced_search #max_price::-webkit-input-placeholder,
-.search .advanced_search #keywords::-webkit-input-placeholder{
-   color: #95badf;
-}
-
-.search .advanced_search #check_in_date:-moz-placeholder, 
-.search .advanced_search #check_out_date:-moz-placeholder, 
-.search .advanced_search #min_price:-moz-placeholder, 
-.search .advanced_search #max_price:-moz-placeholder, 
-.search .advanced_search #keywords:-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search .advanced_search #check_in_date::-moz-placeholder, 
-.search .advanced_search #check_out_date::-moz-placeholder, 
-.search .advanced_search #min_price::-moz-placeholder, 
-.search .advanced_search #max_price::-moz-placeholder, 
-.search .advanced_search #keywords::-moz-placeholder{ 
-   color: #95badf;  
-}
-
-.search .advanced_search #check_in_date:-ms-input-placeholder,  
-.search .advanced_search #check_out_date:-ms-input-placeholder,  
-.search .advanced_search #min_price:-ms-input-placeholder,  
-.search .advanced_search #max_price:-ms-input-placeholder,  
-.search .advanced_search #keywords:-ms-input-placeholder{  
-   color: #95badf;  
-} 
-
- */
 
 
 
@@ -588,32 +401,8 @@ footer .copyrights{
         padding: 0 40px;
         max-width: 1020px;
     }
-    /* Area Busqueda
-    .search .advanced_search .arrow{
-        top: -8px;
-        right: 46px;
-    }
 
-    .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date,
-    .search .advanced_search #min_price,
-    .search .advanced_search #max_price{
-        width: 46.27272727272727%;
-        padding: 0 1.818181818181818%;
-    }
-
-    .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date{
-        background: url('../img/calendar_icon.png') no-repeat;
-        background-position: 95.08840864440079% 50%;
-    }
-
-    .search .advanced_search #keywords{
-        width: 96.36363636363636%;
-        padding: 0 1.818181818181818%;
-    }
-*/
-
+    
   
     footer .footer > ul > li.about{
         width: 29.72727272727273%;
@@ -733,42 +522,10 @@ footer .copyrights{
         width: 85%;
         padding: 0 5%; 
     }
-
-    .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date,
-    .search .advanced_search #min_price,
-    .search .advanced_search #max_price{
-        width: 96.36363636363636%;
-        padding: 0 1.818181818181818%;
-        border-bottom: 1px solid #aac8e4;
-    }
-
-    .search .advanced_search #check_in_date,
-    .search .advanced_search #check_out_date{
-        background: url('../img/calendar_icon.png') no-repeat;
-        background-position: 95.08840864440079% 50%;
-    }
-
-    .search .advanced_search #keywords{
-        width: 96.36363636363636%;
-        padding: 0 1.818181818181818%;
-    }
-
-    .search .advanced_search .search_fields{
-        border-bottom: 0;
-    }
-
-    .search .advanced_search .field_sep{
-        display: none;
-    }
 }
 
 
 @media (max-width:500px){
-
-    .search #search{
-        width: 83%;
-    }
 
     .listings ul.pokemon_list li{
         width: 100%;
