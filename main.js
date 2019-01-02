@@ -1,31 +1,71 @@
-// constantes que usaremos
+// leer data de Pokemon
 const pokemonApi = fetch('./data/pokemon/pokemon.json')
-const dataPokemon = document.getElementById("pokemones")
+
+// Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
+const dataPokemon = document.querySelector("#pokemones .pokemones_list")
 
 pokemonApi.then(result => {
   return result.json();
 }).then(result => {
   let arrElementos = [];
   result.pokemon.forEach(element => {
-    let divPokemon = document.createElement("div")
+//creamos todas las variables a utilizar
+    let cardPokemon = document.createElement("div")
+    let cardBody = document.createElement("div")
+    let cardTitle = document.createElement("h5")
+    let imagePokemon = document.createElement("img")
     let namePokemon = document.createTextNode(element.name)
-    divPokemon.appendChild(namePokemon)
-    dataPokemon.appendChild(divPokemon)
-   let imagePokemon = document.createElement("img")
-   imagePokemon.setAttribute("src",element.img)
-   divPokemon.appendChild(imagePokemon)
-   dataPokemon.appendChild(divPokemon)
-   let elementPokemon = document.createTextNode(element.type)
-   divPokemon.appendChild(elementPokemon)
-   dataPokemon.appendChild(divPokemon)
-   let numPokemon = document.createTextNode(element.num)
-   divPokemon.appendChild(numPokemon)
-   dataPokemon.appendChild(divPokemon)
-   
+    let elementPokemon = document.createTextNode(element.type)
+    let numPokemon = document.createTextNode(element.num)
+    let txtBody = ""
+
+    // Asigno Clase CSS de Bootstrap a DIV
+    // Asigno clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
+    // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
+    cardPokemon.classList.add("card", "col-2")
+
+
+    // Asigno atributo SRC a Imagen
+    imagePokemon.setAttribute("src", element.img)
+    // Asigno atributo ALT a Imagen
+    // Utilizo valor directo del JSON porque namePokemon es un nodo tipo texto y necesito solo un string. Si utilizo namePokemon en el HTML aparecera [HTML Object]
+    imagePokemon.setAttribute("alt", "imagen de " + element.name)
+    // Asigno Clase CSS de Bootstrap para img en card
+    imagePokemon.classList.add("card-img-top")
+    // Inserto la imagen pokemon al div con clase CSS "card"
+    cardPokemon.appendChild(imagePokemon)
+
+    // Asigno clase CSS de Bootstrap a Título de card
+    cardTitle.classList.add("card-title")
+    // Inserto nombre del Pokemon al titulo
+    cardTitle.appendChild(namePokemon)
+    // Inserto "card-title" al div con clase CSS "card" 
+    cardPokemon.appendChild(cardTitle)
+
+    // Creo texto que insertaré en el body de la card
+    // Escribo HTML en el string, para insertarlo como HTML más adelante
+    txtBody = '<p class="card-text">Pokemon tipo: <strong>' + element.type + '</strong></p><br/><p class="card-text">Número: <strong>' + element.num + '</strong></p>'
+
+    // Asigno clase bootstrap para "card-body"
+    cardBody.classList.add("card-body")
+    // Inserto contenido HTML(variable txtBody) antes que termine el html de cardPokemon
+    // No uso appendChild porque txtBody no es un elemento tipo nodo, es un string
+    // Insert insertAdjacentHTML permite insertar un string que contiene HTML en una ubicación específica, en este caso antes de que termine el elemento cardPokemon
+    cardBody.insertAdjacentHTML("beforeend", txtBody);
+
+
+    // Inserto "card-title" al div con clase CSS "card" 
+    cardPokemon.appendChild(cardBody)
+
+    // Insertar DIV creado en JS al documento HTML
+    dataPokemon.appendChild(cardPokemon)
+
   });
 }).catch(err => {
+  // Mostrar error
+  // eslint-disable-next-line no-console
+  console.log(err)
 });
-
 
 
 /*
