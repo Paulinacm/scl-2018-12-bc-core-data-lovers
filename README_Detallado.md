@@ -1,3 +1,4 @@
+
 # Pokemon Go. Pokedex-Kanto
 
   
@@ -6,9 +7,9 @@
 
 El inicio de este trabajo se desarrolla en el contexto del Bootcamp de [Laboratoria](https://www.laboratoria.la/). Desafío Data Lovers.
 
-Cuándo: La duración para el desarrollo del proyecto fue de 3 semanas, con fecha de entrega en enero 2019.
+**Cuándo:** La duración para el desarrollo del proyecto fue de 3 semanas, con fecha de entrega en enero 2019.
 
-Problema/meta general: Construir una página web para visualizar un conjunto (set) de datos que se adecúe a lo que descubramos que el usuario necesita. Un pokedex.
+**Problema/meta general:** Construir una página web para visualizar un conjunto (set) de datos que se adecúe a lo que descubramos que el usuario necesita. Un pokedex.
 
 
 ![](https://lh4.googleusercontent.com/P39bT9H3odkUtECZ1hC-52LyrzXiQTsgOxbnaOgyz-KbcBw5qn_wJRI7aU4G4iX26g8Y_VFw-ribwu9RdClov2-RFgrC0zvlpLu656FYV8zacfnAyvA3e4ZDJaMYG2WgecRveaC-)
@@ -16,20 +17,19 @@ Problema/meta general: Construir una página web para visualizar un conjunto (se
 El Pokédex en el mundo ficticio de Pokémon, es una enciclopedia portátil de alta tecnología que los Entrenadores Pokémon llevan consigo para registrar las fichas de todas las diversas especies Pokémon con las que se encuentran durante su viaje como entrenadores (Fuente: [Wikipedia).](https://es.wikipedia.org/wiki/Pok%C3%A9dex)
 
   
-Equipo: Este proyecto se basa en el trabajo en equipos conformados por duplas, en nuestro caso, sin conocer el juego Pokemon Go, sin embargo nos decidimos por este proyecto, porque nos pareció poder comprender mejor quién iba a ser el usuario de nuestro futuro producto, lo cual nos pareció lo más relevante en ese momento.
+**Equipo:** Este proyecto se basa en el trabajo en equipos conformados por duplas, en nuestro caso, sin conocer el juego Pokemon Go, sin embargo nos decidimos por este proyecto, porque nos pareció poder comprender mejor quién iba a ser el usuario de nuestro futuro producto, lo cual nos pareció lo más relevante en ese momento.
 
-Herramientas utilizadas: HTML, CSS, Vanilla Javascript, Boostrap, Figma, Slack, Git, Github, Zeplin.
+**Herramientas utilizadas:** HTML, CSS, Vanilla Javascript, Boostrap, Figma, Slack, Git, Github, Zeplin.
 
 ![enter image description here](https://lh3.googleusercontent.com/mXAIIRpmtb8pAGWJ9dG0m6SVOiu8-VCh1K0bwRAECBLO3lNTN2hsmtFZ1V4dTVFauyD4kCxyTzWq "Herramientas")
 
-Resultados y entregas:
-
+**Resultados y entregas:**
 -   Un reporte con las conclusiones clave respecto al trabajo con los usuarios y los patrones de interacción.
     
 -   Una página web que permita visualizar la data, filtrarla, ordenarla y hacer algún cálculo agregado.
     
 
-Status: En proceso.
+**Status:** En proceso.
 
   
 
@@ -60,11 +60,10 @@ Nos dimos cuenta que en solo esta pequeña muestra de entrevistadas habían algu
 
   
 ********
-## Definitions of done
+## Historias de Usuario
 
-### Historias de Usuario
-
-  
+### Definitions of done
+Aqui desarrollamos las historias de usuario de nuestro producto.
 
 1.  Enunciado: "Yo como usuario de la aplicación"
 
@@ -118,7 +117,7 @@ Criterios de Aceptación:
 
 #### User Flowchart
 
-Luego de tener más claro quién sería nuestro usuario, comenzamos el proceso de pensar en el flujo del usuario al usar la aplicación. Así creamos
+Luego de tener más claro quién sería nuestro usuario, comenzamos el proceso de pensar en el flujo del usuario al usar la aplicación. Así creamos un prototipo del flujo básico del usuario, el flujo de filtrado, de ordenado (alfabeto o numérico), búsqueda, y estadísticas.
 
   
 
@@ -129,7 +128,7 @@ Añadir aqui las fotos del flujo de usuario
 
 ## Stage 2 - Prototipado baja definición
 
-El paso siguiente corresponde al prototipado de baja definición, aqui comenzamos ideando e iterando sobre cómo debería verse la aplicación, y qué elementos debería contener para llegar a nuestra meta.
+El paso siguiente corresponde al prototipado de baja definición, aquí comenzamos ideando e iterando sobre cómo debería verse la aplicación, y qué elementos debería contener para llegar a nuestra meta.
 
   
 
@@ -152,11 +151,14 @@ De este modo, este insumo nos sirvió para modificar nuestro prototipo inicial y
 
   
 
-En esta etapa también decidimos incorporar la herramienta de Boostrap, como plantilla para la página, esto fue un desafío personal, para aprender una nueva herramienta, así como una mejor presentación de la información.. Para esto nos decidimos por el template [La Casa](http://pixelhint.com/demo/la_casa/), ya que era la que más cercana estaba al prototipado de baja definición que nos habíamos propuesto en esta etapa. De este modo modificamos la plantilla (HTML y CSS).
+En esta etapa también decidimos incorporar la herramienta de Boostrap, como plantilla para la página, esto fue un desafío personal, para aprender una nueva herramienta, así como una mejor presentación de la información. Para esto nos decidimos por el template [La Casa](http://pixelhint.com/demo/la_casa/), ya que era la que más cercana estaba al prototipado de baja definición que nos habíamos propuesto en esta etapa. De este modo modificamos la plantilla (HTML y CSS). Sin embargo, avanzando en el proyecto nos dimos cuenta que en realidad este template entorpecía nuestro trabajo más que aligerarlo, ya que habían muchos elementos que no utilizamos, y otros que nos demoraba tiempo en comprender, por lo que a la segunda semana decidimos eliminarlo, y trabajar nuestra propia plantilla.
 
-  
+## Planificación
+
+Paralelo a este proceso trabajamos de manera digital en trello, project de github. Y analógicamente en el tablero proporcionado en Laboratoria.
 
 
+aqui fotos de los tableros
   
   
   
@@ -165,17 +167,15 @@ En esta etapa también decidimos incorporar la herramienta de Boostrap, como pla
 
 ## Stage 3 - Prototipado alta definición
 
-  
-
 Esta es la segunda Iteración, la primera no fue guardada previo al cambio, pero era bastante similar, únicamente modificamos los colores, desde tonos oscuros (de azul marino para el fondo, a blanco y azulino).
 
-Aqui comenzamos a definir más claramente lo que queríamos lograr, esta vez cambiando los colores por unos más claros.
+Aquí comenzamos a definir más claramente lo que queríamos lograr, esta vez cambiando los colores por unos más claros.
 
   
 
-Versión computador escritorio
+Versión computador escritorio.
 
-# ![aplicación, versión escritorio](https://lh3.googleusercontent.com/NClgGDo6Mqmhaua3efY1pRADbPQ5qZJJ02ASL6TsOMwW5Xi4uMQYNu9Axk9CAZsauhdd2it_Q0t9b1y_c_GEr6nKWy5WDubTkxjv2xaQvSQYNFHOy54x5HMjEKFMN8WQ7ElfpeVa)
+![aplicación, versión escritorio](https://lh3.googleusercontent.com/NClgGDo6Mqmhaua3efY1pRADbPQ5qZJJ02ASL6TsOMwW5Xi4uMQYNu9Axk9CAZsauhdd2it_Q0t9b1y_c_GEr6nKWy5WDubTkxjv2xaQvSQYNFHOy54x5HMjEKFMN8WQ7ElfpeVa)
 
 Versión celular
 
@@ -194,9 +194,9 @@ Versión celular
     
 3.  número de testeos
      
-Mediante la red de contactos de ambas integrantes del equipo, encontramos a algunas personas usuarios y no usuarios de Pokemon Go, que nos ayudaron a testear la aplicación.
+Mediante la red de contactos de ambas integrantes del equipo, encontramos a personas que son usuarios y no usuarios de Pokemon Go, que nos ayudaron a testear la aplicación.
 
-Estas entrevistas se basaron en una breve entrevista inicial, un testeo basado en el prototipo de Figma, donde se les invitó a los entrevistados que utilizaran el demo de la aplicación, y finalmente, se les hicieron algunas preguntas acerca de su satisfacción, usabilidad y utilidad,
+Estas entrevistas se basaron en una breve entrevista inicial (experiencia previa con la aplicación), luego un testeo basado en el prototipo de Figma (con una tarea específica), donde se les invitó a los entrevistados que utilizaran el demo de la aplicación, y finalmente, se les hicieron algunas preguntas acerca de su satisfacción, usabilidad y utilidad (cómo fue la experiencia, que le cambiarian, sacarían, mejorarian).
 
 A partir de lo anterior se encontró que:
 
@@ -207,17 +207,20 @@ A partir de lo anterior se encontró que:
 
 ### Storyboard  —  Usando la App
 
-Creamos una storyboard para describir la experiencia del usuario de la aplicación Pokedex. Mediante esto se puede explorar el producto en un contexto amplio, como si fuera parte de una narrativa mayor. Es una forma económica y efectiva de capturar, relacionar y explorar la aplicación en el mundo real.
+Creamos un storyboard para describir la experiencia de un usuario de la aplicación Pokedex. Mediante esta estrategia se puede explorar el producto en un contexto amplio, como si fuera parte de una narrativa mayor. Es una forma económica y efectiva de capturar, relacionar y explorar la aplicación en el mundo real.
 
   
 
 ### Paleta de Colores
+Elegimos estos colores porque
 
 ![](https://lh3.googleusercontent.com/PGqwjJkvauOfyHzOTiczm65nDvGzVF4O9fHHytEKXrDcQyawJlbUlXK86dryfI4LumXierdq2qcuOsDWcRjrT0IOgIn-DaM6jHiuXPTHPmKTgKgfsSIhLsUWPvwIK8MPp1wAnSIl)
 
 ### Tipografía
+La tipografía elegida fue... debido a que
 
 ### Iconos & Ilustraciones
+
 
 ### Nombre & Logo
 
@@ -228,24 +231,17 @@ Creamos una storyboard para describir la experiencia del usuario de la aplicaci�
 ## Etapa 5 - El Diseño final
 
 
-La meta del TIt required a simple and quick process. After presenting and discussing my research with the client, I started working on a solution, with a large set of notes by my side.  The final version is open if you want to verla.
+La meta del la aplicación web es crear un proceso rápido de resolución de búsqueda de un pokemon.  La versión final esta disponible para verla.
 
   
 
 
   
-
-The experience was organized in 5 steps, where each screen displays just enough information to make a considered choice on a specific component instead of the whole shirt. Along with existing usage analytics, each choice informs the wizard on what to show next, guiding the user in their choices.
-
-This prototype was presented and validated with the client but also with the designer in charge of the UI.
-
-  
+La experiencia del usuario esta basada en algunos pasos, donde cada pantalla aparece suficiente información para poder realizar un selección, búsqueda, ordenamiento de la información de los pokemon disponibles.
+A partir de los testeos de usuarios, las decisiones respecto a los diseños se basaron en las necesidades detectadas en estos usuarios.  
   
 
-## Conclusion
-
-
-Projects like this are usually a simple task for any UI designer. It’s a matter of having all the content and options that need to be displayed. But had this gone straight to interface design and we wouldn’t have found out so much about how people interact with the brand, the website and the business.
+## Conclusiones
 
 Overall this was a very interesting challenge to be involved with, and it was only possible thanks to the collaboration of 3 client stakeholders (including the tailor herself), 4 online clients, 2 guest users, and the final design/development team.
 
