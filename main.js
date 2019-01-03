@@ -68,7 +68,7 @@ pokemonApi.then(result => {
 
 
 /*
-// elementos que usaremos
+// ejemplo a revisar
 const form = document.getElementById('search-form');
 const searchField = document.getElementById('search-keyword');
 const responseContainer = document.getElementById('response-container');
