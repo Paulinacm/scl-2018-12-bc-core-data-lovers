@@ -1,4 +1,3 @@
-
 # Pokemon Go. Pokedex-Kanto
 
   
@@ -21,6 +20,8 @@ Equipo: Este proyecto se basa en el trabajo en equipos conformados por duplas, e
 
 Herramientas utilizadas: HTML, CSS, Vanilla Javascript, Boostrap, Figma, Slack, Git, Github, Zeplin.
 
+![enter image description here](https://lh3.googleusercontent.com/mXAIIRpmtb8pAGWJ9dG0m6SVOiu8-VCh1K0bwRAECBLO3lNTN2hsmtFZ1V4dTVFauyD4kCxyTzWq "Herramientas")
+
 Resultados y entregas:
 
 -   Un reporte con las conclusiones clave respecto al trabajo con los usuarios y los patrones de interacción.
@@ -37,32 +38,31 @@ Status: En proceso.
 
 Comenzamos con una búsqueda online para conocer lo que hay disponible para los usuarios respecto a aplicaciones que den información sobre Pokemon Go. Encontramos dos sitios principales [Pokedex.com](https://www.pokemon.com/es/pokedex/) y [Pokedex.org](https://pokedex.org/).
 
-  
-![](https://lh3.googleusercontent.com/JpAR0voLUesIONxqgk5uCE6lm3lOH1Vy2SH3Cndd0GWuIHEgHqjjOeC4DhW9_sWwioUthU9deKvAEDEgeEUmuw8gbRKRz3OenM9JBkAKzrOzcQwBdq6WYkqLYvqFFkdG_UfuWOCL)![](https://lh5.googleusercontent.com/Iyk93mjDUF-eW-R_c2iRxBa0fXx3AYIw5jWfIhWaLx5K0HOQWY0SSyehOb2hv3nQoBtIRe11e1QtMWVlDMGAtBJnzf7OP9VJ1i-XJ6vMvKYN4zqknXmszEUnw6MKuNc91IQAQLQA)
+  ![enter image description here](https://lh3.googleusercontent.com/WfBr0Ss9BcPpMyXcgIclBt5ipvTghCQH5Sf4paMWONX_DoJDMXARIN2Kh9MrAOI1Cz0uQR9FU8Bh "PokeWeb")
+
 
 Ambos proporcionan una idea de nuestro objetivo en cuanto al modo de presentar la información, de realizar búsquedas y filtros de los distitos pokemon.
 
 A partir de esta búsqueda inicial, pasamos acercamos a varias compañeras que son jugadoras de Pokemon Go, para conocer de qué manera nuestra aplicación les podría servir. Conversamos con 3 compañeras, y realizamos preguntas como:
 
-2.- ¿Qué información es más relevante conocer para ti? (peso, altura, debilidad, eggs, etc. respecto a lo disponible en la base de datos proporcionada para el desafío).
+2.- **¿Qué información es relevante conocer para ti?** (peso, altura, debilidad, eggs, etc. respecto a lo disponible en la base de datos proporcionada para el desafío).
 
-3.- ¿Para qué necesitarías esta información? (cuándo, cómo, por qué)
+3.- **¿Para qué necesitarías esta información?** (cuándo, cómo, por qué)
 
   
 
 Nos dimos cuenta que en solo esta pequeña muestra de entrevistadas habían algunas diferencias, ya que por ejemplo para algunas era relevante saber …. Mientras que para otras no. Esto lo atribuimos a la experiencia previa en relación con el juego, es decir aquellas con más experiencia y conocimiento del juego, parecen requerir menos información de los pokemon, que sería provista por nuestra aplicación, lo que ayudó a definir mejor a nuestro usuario:
 
   
-*Definición del usuario*
-Un jugador novato de Pokemon Go, y que quiera conocer/ informarse
-              de los pokemones de la región de Kanto para mejorar como
-              entrenador y convertirse en MAESTRO POKEMON,
+***Definición del usuario***
+
+> Un jugador novato de Pokemon Go, y que quiera conocer/ informarse de los pokemones de la región de Kanto para mejorar como entrenador y convertirse en MAESTRO POKEMON,
 
   
 ********
-Definitions of done
+## Definitions of done
 
-Historias de Usuario
+### Historias de Usuario
 
   
 
@@ -156,7 +156,6 @@ En esta etapa también decidimos incorporar la herramienta de Boostrap, como pla
 
   
 
-![](https://lh6.googleusercontent.com/S34kfaltavPJK2CzRJQUkIZ6-9TIEBT7cDAYBgDgFJtPRMC3w47Icq6mzeJHiHYJRoBnBjgoBhdL01thlQdOqrg2MnpMvTV4vWmq_jrWoL0BCdwCL82nwwrA2kwgnA0AZeY9DwxK)
 
   
   
@@ -229,11 +228,10 @@ Creamos una storyboard para describir la experiencia del usuario de la aplicaci�
 ## Etapa 5 - El Diseño final
 
 
-La meta del TIt required a simple and quick process. After presenting and discussing my research with the client, I started working on a solution, with a large set of notes by my side. The final result was an interactive low-fidelity prototype which was achieved after 3 versions of a mind map, 1 version of a paper prototype and finally 1 version + 2 revisions of the wireframes. The final version is open if you want to [take look](https://invis.io/S6O2PL4NWBM).
+La meta del TIt required a simple and quick process. After presenting and discussing my research with the client, I started working on a solution, with a large set of notes by my side.  The final version is open if you want to verla.
 
   
 
-![](https://lh5.googleusercontent.com/Svj5Bok28AFO78biH_b81hedSh7KT7chdRUlnvMsKp9exOWS6-1W7T2gJki4dohWdubRyjYBFHxD11zMqgVHElAhJpyl2yJVaoQ9El7F6w1qpvVd1cbRwQzYsU3079FbmbxfCCfptHcb9sAdmQ)
 
   
 
@@ -255,9 +253,11 @@ Overall this was a very interesting challenge to be involved with, and it was on
 
 ### Aspectos a mejorar:
 
-  
-  klnlnl lm 
-  
+ 
+
+ - List item
+ - 
+
   
 
 *********

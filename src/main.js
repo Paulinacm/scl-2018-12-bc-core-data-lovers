@@ -1,4 +1,4 @@
-// leer data de Pokemon
+// constantes que usaremos
 const pokemonApi = fetch('./data/pokemon/pokemon.json')
 
 // Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
@@ -9,7 +9,6 @@ pokemonApi.then(result => {
 }).then(result => {
   let arrElementos = [];
   result.pokemon.forEach(element => {
-//creamos todas las variables a utilizar
     let cardPokemon = document.createElement("div")
     let cardBody = document.createElement("div")
     let cardTitle = document.createElement("h5")
@@ -22,7 +21,7 @@ pokemonApi.then(result => {
     // Asigno Clase CSS de Bootstrap a DIV
     // Asigno clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
     // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
-    cardPokemon.classList.add("card", "col-2")
+    cardPokemon.classList.add("card", "m-1", "p-2")
 
 
     // Asigno atributo SRC a Imagen
@@ -47,7 +46,7 @@ pokemonApi.then(result => {
     txtBody = '<p class="card-text">Pokemon tipo: <strong>' + element.type + '</strong></p><br/><p class="card-text">Número: <strong>' + element.num + '</strong></p>'
 
     // Asigno clase bootstrap para "card-body"
-    cardBody.classList.add("card-body")
+    cardBody.classList.add("card-body", "p-0")
     // Inserto contenido HTML(variable txtBody) antes que termine el html de cardPokemon
     // No uso appendChild porque txtBody no es un elemento tipo nodo, es un string
     // Insert insertAdjacentHTML permite insertar un string que contiene HTML en una ubicación específica, en este caso antes de que termine el elemento cardPokemon
