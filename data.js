@@ -15,7 +15,6 @@ function crearCard(objPokemon){
   let imagePokemon = document.createElement("img")
   let txtBody = "";
 
-
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
   // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
   cardPokemon.classList.add("card", "m-1", "p-2");
@@ -67,7 +66,7 @@ pokemonApi.then(result => {
 });
 
 //funciones para ordenar de forma descendete y ascendente
-function ordenarNumDesc(){
+function orderNumDesc(){
    let arrPokemonesNumDesc = arrPokemones;
    arrPokemonesNumDesc.sort((a, b) => {
      if (parseInt(a.num) < parseInt(b.num))
@@ -82,7 +81,7 @@ function ordenarNumDesc(){
      dataPokemon.appendChild(cardPokemon);
    });
 }
-function ordenarNumAsc() {
+function orderNumAsc() {
   let arrPokemonesNumAsc = arrPokemones;
   arrPokemonesNumAsc.sort((a, b) => {
     if (parseInt(a.num) > parseInt(b.num))
@@ -98,6 +97,38 @@ function ordenarNumAsc() {
   });
 }
 
+//funciones para ordernar de A-Z, y Z-A
+function orderNameAz() {
+  let arrPokemonesNameAz = arrPokemones;
+  arrPokemonesNameAz.sort((a, b) => {
+    if (a.name > b.name)
+      return 1
+    else
+      return -1 
+  })
+
+  dataPokemon.innerHTML = ""
+  arrPokemonesNameAz.forEach(element => {
+    const cardPokemon = crearCard(element)
+    dataPokemon.appendChild(cardPokemon);
+  });
+}
+
+function orderNameZa() {
+  let arrPokemonesNameZa = arrPokemones;
+  arrPokemonesNameZa.sort((a, b) => {
+    if (a.name < b.name)
+      return 1
+    else
+      return -1
+  })
+
+  dataPokemon.innerHTML = ""
+  arrPokemonesNameZa.forEach(element => {
+    const cardPokemon = crearCard(element)
+    dataPokemon.appendChild(cardPokemon);
+  });
+}
 
 
 /* //prueba filter
@@ -128,7 +159,6 @@ const nombrePokemones = (data) => {
   }
   return nombres; //retorno el arreglo de nombres para que pueda tomarlo desde el archivo main.js y hacer la visualización de datos con el DOM
 }
-
 window.nombrePokemones = nombrePokemones;
 
 */
