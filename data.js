@@ -131,15 +131,44 @@ function orderNameZa() {
 }
 
 
-/* //prueba filter
+
+// función que filtra los pokemones
+const $filterInput = $('.filtered-pokemon');
+$filterInput.keyup(filterPokemons);
+
+function filterPokemons() {
+  let searchPokemon = $filterInput.val();
+  $('#pokemons-container').empty();
+  if ($filterInput.val().trim().length > 0) {
+    let filteredPokemons = JSON.parse(localStorage.getItem('data-pokemon')).filter(pokemon => {
+      let nameMatch = pokemon.name.indexOf(searchPokemon) >= 0
+      return nameMatch
+    }).forEach(pokemon => {
+      paintPokemonCard(pokemon)
+    })
+    $('#pokemons-container:empty').html('<p class="h1">Lo sentimos, no encontramos coincidencias <i class="fa fa-frown-o" aria-hidden="true"></i></p>');
+  } else {
+    $('#pokemons-container').empty();
+    JSON.parse(localStorage.getItem('data-pokemon')).forEach(pokemon => {
+      paintPokemonCard(pokemon)
+    })
+  }
+}
+
+
+
+
+
+/*
+
+
+//prueba filter
 window.data = {
   filterData: (dataPokemon, searchPokemon) => {
     const filterPokemonName = dataPokemon.filter(dataPokemon => (dataPokemon.name === searchPokemon));
     console.log(filterPokemonName);
   },
-  sortData: (dataPokemon, sortBy, sortOrder) => {
-
-  },
+ 
   computeStats: (dataPokemon) => {
   }
 }
