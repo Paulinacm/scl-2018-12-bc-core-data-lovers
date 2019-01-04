@@ -66,6 +66,7 @@ pokemonApi.then(result => {
   console.log(err);
 });
 
+//funciones para ordenar de forma descendete y ascendente
 function ordenarNumDesc(){
    let arrPokemonesNumDesc = arrPokemones;
    arrPokemonesNumDesc.sort((a, b) => {
@@ -96,6 +97,23 @@ function ordenarNumAsc() {
     dataPokemon.appendChild(cardPokemon);
   });
 }
+
+
+
+/* //prueba filter
+window.data = {
+  filterData: (dataPokemon, searchPokemon) => {
+    const filterPokemonName = dataPokemon.filter(dataPokemon => (dataPokemon.name === searchPokemon));
+    console.log(filterPokemonName);
+  },
+  sortData: (dataPokemon, sortBy, sortOrder) => {
+
+  },
+  computeStats: (dataPokemon) => {
+  }
+}
+*/
+
 /*
 //esta es una función de ejemplo
 const data = POKEMON.pokemon; //guardo en una constante el arreglo de objetos con los pokemones.
