@@ -31,3 +31,6 @@ document.getElementById('btn-fire').addEventListener('click', (event) => {
         document.getElementById('root').innerHTML += '<button><img src="' + resultDataImg[i] + '"><p>' + resultDataName[i] + '</p></button>';
       }
   */
+
+  
+  
