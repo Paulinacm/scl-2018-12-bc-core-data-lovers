@@ -31,3 +31,20 @@ document.getElementById('btn-fire').addEventListener('click', (event) => {
         document.getElementById('root').innerHTML += '<button><img src="' + resultDataImg[i] + '"><p>' + resultDataName[i] + '</p></button>';
       }
   */
+
+
+  /*
+  const filtrarTipo = () => {
+    const arrayFiltrado = pokemon.filtrarPropiedad(arrayPokemon, tipoPokemon.value);
+    //console.log(arrayFiltrado);
+    crearPlantilla(arrayFiltrado);
+    if (tipoPokemon.value === 'Selecciona tipo pokemon') {
+      document.getElementById('region-kanto').innerHTML = '';
+      crearPlantilla(arrayVacio);
+      alert("Debes seleccionar un tipo");
+    }
+  };
+
+  btnFiltrar
+
+  */

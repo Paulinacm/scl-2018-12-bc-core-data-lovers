@@ -1,5 +1,4 @@
 // AQUI VA LA LOGICA. funciones filtrar, ordenar, calcular
-// constantes que usaremos
 const pokemonApi = fetch('./data/pokemon/pokemon.json');
 
 // Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
@@ -8,7 +7,7 @@ const dataPokemon = document.querySelector("#pokemones .pokemones_list");
 // Creo array para guardar los objetos pokemones y no hacer constantes fetch
 let arrPokemones = []
 
-function crearCard(objPokemon){
+function createCard(objPokemon){
   let cardPokemon = document.createElement("div")
   let cardBody = document.createElement("div")
   let cardTitle = document.createElement("h5")
@@ -56,7 +55,7 @@ pokemonApi.then(result => {
   arrPokemones = result.pokemon;
   result.pokemon.forEach(element => {
     // Creo el div con la funciónn crearCard, y paso por parametro el objeto element, que contiene la información del pokemon
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }).catch(err => {
@@ -66,7 +65,7 @@ pokemonApi.then(result => {
 });
 
 //funciones para ordenar de forma descendete y ascendente
-function orderNumDesc(){
+function sortNumDesc(){
    let arrPokemonesNumDesc = arrPokemones;
    arrPokemonesNumDesc.sort((a, b) => {
      if (parseInt(a.num) < parseInt(b.num))
@@ -77,11 +76,11 @@ function orderNumDesc(){
 
    dataPokemon.innerHTML = ""
    arrPokemonesNumDesc.forEach(element => {
-     const cardPokemon = crearCard(element)
+     const cardPokemon = createCard(element)
      dataPokemon.appendChild(cardPokemon);
    });
 }
-function orderNumAsc() {
+function sortNumAsc() {
   let arrPokemonesNumAsc = arrPokemones;
   arrPokemonesNumAsc.sort((a, b) => {
     if (parseInt(a.num) > parseInt(b.num))
@@ -92,13 +91,13 @@ function orderNumAsc() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNumAsc.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
 //funciones para ordernar de A-Z, y Z-A
-function orderNameAz() {
+function sortNameAz() {
   let arrPokemonesNameAz = arrPokemones;
   arrPokemonesNameAz.sort((a, b) => {
     if (a.name > b.name)
@@ -109,12 +108,12 @@ function orderNameAz() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNameAz.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
-function orderNameZa() {
+function sortNameZa() {
   let arrPokemonesNameZa = arrPokemones;
   arrPokemonesNameZa.sort((a, b) => {
     if (a.name < b.name)
@@ -125,13 +124,17 @@ function orderNameZa() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNameZa.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
 
+//funciones para filtrar por elemento (type)
 
+// const pokemonFire = Pokemon.pokemon.filter ((elemento))
+
+/*
 // función que filtra los pokemones
 const $filterInput = $('.filtered-pokemon');
 $filterInput.keyup(filterPokemons);
@@ -154,8 +157,34 @@ function filterPokemons() {
     })
   }
 }
+*/
 
 
+
+
+
+//para estadisticas, contar el numero de pokemon x tipo
+/* const cantXType = arrFilterPokemonType.length;
+   const porcentaje = ((cantXType / 151) * 100);
+   arrPorcentaje.push(porcentaje); 
+*/
+
+/*
+var condition = obj.Pokemon.type
+const stats = (dataPokemon, condition) => {
+  let arrPorcentaje = [];
+  for (let i = 0; i < condition.length; i++) {
+    const arrFilterPokemonType = dataPokemon.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));
+    const cantXType = arrFilterPokemonType.length;
+    arrPorcentaje.push(cantXType);
+  }
+  return arrPorcentaje;
+};
+
+window.data = {
+  stats,
+};
+*/
 
 
 
