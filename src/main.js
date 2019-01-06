@@ -13,6 +13,24 @@ document.getElementById('btn').addEventListener('click', () => {
 })
 */
 
+
+const textfilter = document.getElementById('textfilter');
+const buttonSearch = document.getElementById('buttonSearch');
+const viewListFilter = document.getElementById('viewListFilter');
+
+const orderAs = document.getElementById('orderAs');
+const filterAsType = document.getElementById('type-pokemon');
+const filterAsEgg = document.getElementById('eggs-pokemon');
+const filterAsWeaknesses = document.getElementById('weaknesses-pokemon');
+
+
+
+
+
+
+
+
+
 /*
 const resultDataImg = dataImg(data);
 const resultDataName = dataName(data);
