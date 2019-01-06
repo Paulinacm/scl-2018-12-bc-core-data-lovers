@@ -129,6 +129,24 @@ function sortNameZa() {
   });
 }
 
+const computeStats = (data, condition) => {
+  let avPromedio;
+  const obj = data.map(elemento => elemento.avg_spawns);
+  const avgSpawns = obj.reduce((a, b) => a + b);
+  const meanSpawns = avgSpawns / obj.length;
+
+  avPromedio = data.filter(elemento => {
+    switch (condition) {
+      case 1:
+        return elemento.avg_spawns > meanSpawns;
+      case 2:
+        return elemento.avg_spawns !== 0 && elemento.avg_spawns < meanSpawns;
+      default:
+        return elemento.avg_spawns === 0;
+    }
+  });
+  return avPromedio;
+};
 
 //funciones para filtrar por elemento (type)
 
