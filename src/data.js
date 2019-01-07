@@ -66,6 +66,11 @@ pokemonApi.then(result => {
   console.log(err);
 });
 
+
+
+
+
+
 //funciones para ordenar de forma descendete y ascendente
 function sortNumDesc(){
    let arrPokemonesNumDesc = arrPokemones;
