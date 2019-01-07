@@ -1,5 +1,4 @@
 // AQUI VA LA LOGICA. funciones filtrar, ordenar, calcular
-// constantes que usaremos
 const pokemonApi = fetch('./data/pokemon/pokemon.json');
 
 // Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
@@ -8,12 +7,13 @@ const dataPokemon = document.querySelector("#pokemones .pokemones_list");
 // Creo array para guardar los objetos pokemones y no hacer constantes fetch
 let arrPokemones = []
 
-function crearCard(objPokemon){ // funcion donde creo la card con la info del pokemon
+function createCard(objPokemon){ // funcion donde creo la card con la info del pokemon
   let cardPokemon = document.createElement("div")  // este div modifica todo texto de  latarjeta
   let cardType = document.createElement("div") // este div, puede modificar toda tarjeta menos el nombre
   let cardNum = document.createElement("div")
   let cardTitle = document.createElement("h6") // este div modifica sol oel Titulo o nombre del pokemon
   let imagePokemon = document.createElement("img") //coloca la imagen en tarjeta
+
 
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
   // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
@@ -57,7 +57,7 @@ pokemonApi.then(result => {
   arrPokemones = result.pokemon;
   result.pokemon.forEach(element => {
     // Creo el div con la funciónn crearCard, y paso por parametro el objeto element, que contiene la información del pokemon
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }).catch(err => {
@@ -67,7 +67,7 @@ pokemonApi.then(result => {
 });
 
 //funciones para ordenar de forma descendete y ascendente
-function orderNumDesc(){
+function sortNumDesc(){
    let arrPokemonesNumDesc = arrPokemones;
    arrPokemonesNumDesc.sort((a, b) => {
      if (parseInt(a.num) < parseInt(b.num))
@@ -78,11 +78,11 @@ function orderNumDesc(){
 
    dataPokemon.innerHTML = ""
    arrPokemonesNumDesc.forEach(element => {
-     const cardPokemon = crearCard(element)
+     const cardPokemon = createCard(element)
      dataPokemon.appendChild(cardPokemon);
    });
 }
-function orderNumAsc() {
+function sortNumAsc() {
   let arrPokemonesNumAsc = arrPokemones;
   arrPokemonesNumAsc.sort((a, b) => {
     if (parseInt(a.num) > parseInt(b.num))
@@ -93,13 +93,13 @@ function orderNumAsc() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNumAsc.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
 //funciones para ordernar de A-Z, y Z-A
-function orderNameAz() {
+function sortNameAz() {
   let arrPokemonesNameAz = arrPokemones;
   arrPokemonesNameAz.sort((a, b) => {
     if (a.name > b.name)
@@ -110,12 +110,12 @@ function orderNameAz() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNameAz.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
-function orderNameZa() {
+function sortNameZa() {
   let arrPokemonesNameZa = arrPokemones;
   arrPokemonesNameZa.sort((a, b) => {
     if (a.name < b.name)
@@ -126,13 +126,35 @@ function orderNameZa() {
 
   dataPokemon.innerHTML = ""
   arrPokemonesNameZa.forEach(element => {
-    const cardPokemon = crearCard(element)
+    const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
   });
 }
 
+const computeStats = (data, condition) => {
+  let avPromedio;
+  const obj = data.map(elemento => elemento.avg_spawns);
+  const avgSpawns = obj.reduce((a, b) => a + b);
+  const meanSpawns = avgSpawns / obj.length;
 
+  avPromedio = data.filter(elemento => {
+    switch (condition) {
+      case 1:
+        return elemento.avg_spawns > meanSpawns;
+      case 2:
+        return elemento.avg_spawns !== 0 && elemento.avg_spawns < meanSpawns;
+      default:
+        return elemento.avg_spawns === 0;
+    }
+  });
+  return avPromedio;
+};
 
+//funciones para filtrar por elemento (type)
+
+// const pokemonFire = Pokemon.pokemon.filter ((elemento))
+
+/*
 // función que filtra los pokemones
 const $filterInput = $('.filtered-pokemon');
 $filterInput.keyup(filterPokemons);
@@ -155,8 +177,34 @@ function filterPokemons() {
     })
   }
 }
+*/
 
 
+
+
+
+//para estadisticas, contar el numero de pokemon x tipo
+/* const cantXType = arrFilterPokemonType.length;
+   const porcentaje = ((cantXType / 151) * 100);
+   arrPorcentaje.push(porcentaje); 
+*/
+
+/*
+var condition = obj.Pokemon.type
+const stats = (dataPokemon, condition) => {
+  let arrPorcentaje = [];
+  for (let i = 0; i < condition.length; i++) {
+    const arrFilterPokemonType = dataPokemon.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));
+    const cantXType = arrFilterPokemonType.length;
+    arrPorcentaje.push(cantXType);
+  }
+  return arrPorcentaje;
+};
+
+window.data = {
+  stats,
+};
+*/
 
 
 

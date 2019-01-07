@@ -1,4 +1,3 @@
-
 # Pokemon Go. Pokedex-Kanto
 
   
@@ -19,9 +18,9 @@ El Pokédex en el mundo ficticio de Pokémon, es una enciclopedia portátil de a
   
 **Equipo:** Este proyecto se basa en el trabajo en equipos conformados por duplas, en nuestro caso, sin conocer el juego Pokemon Go, sin embargo nos decidimos por este proyecto, porque nos pareció poder comprender mejor quién iba a ser el usuario de nuestro futuro producto, lo cual nos pareció lo más relevante en ese momento.
 
-**Herramientas utilizadas:** HTML, CSS, Vanilla Javascript, Boostrap, Figma, Slack, Git, Github, Zeplin.
+**Herramientas utilizadas:** 
 
-![enter image description here](https://lh3.googleusercontent.com/mXAIIRpmtb8pAGWJ9dG0m6SVOiu8-VCh1K0bwRAECBLO3lNTN2hsmtFZ1V4dTVFauyD4kCxyTzWq "Herramientas")
+![enter image description here](https://lh3.googleusercontent.com/K5YEM2sCvv8WQHnLeLstBvUAbT3S9wKHURLlZOOBPmMAzgwgXgWRnpaPXJXSKENSxveLyEwL2mFw "Herram_web")
 
 **Resultados y entregas:**
 -   Un reporte con las conclusiones clave respecto al trabajo con los usuarios y los patrones de interacción.
@@ -38,7 +37,7 @@ El Pokédex en el mundo ficticio de Pokémon, es una enciclopedia portátil de a
 
 Comenzamos con una búsqueda online para conocer lo que hay disponible para los usuarios respecto a aplicaciones que den información sobre Pokemon Go. Encontramos dos sitios principales [Pokedex.com](https://www.pokemon.com/es/pokedex/) y [Pokedex.org](https://pokedex.org/).
 
-  ![enter image description here](https://lh3.googleusercontent.com/WfBr0Ss9BcPpMyXcgIclBt5ipvTghCQH5Sf4paMWONX_DoJDMXARIN2Kh9MrAOI1Cz0uQR9FU8Bh "PokeWeb")
+  ![enter image description here](https://lh3.googleusercontent.com/btYuPIJ4hYYTh8Cqc30RjUT9_IyM4eWZd1A5mXrEv3DkOy1C9UJWsD9J2Yahg7qoAS5zi53tyce8 "Pokedex")
 
 
 Ambos proporcionan una idea de nuestro objetivo en cuanto al modo de presentar la información, de realizar búsquedas y filtros de los distitos pokemon.
@@ -93,9 +92,6 @@ Criterios de Aceptación:
  - [ ] Quiero ordenar el id número de forma descendente
 
     
-
-  
-
 3. Enunciado: "Yo como usuario de la aplicación"
 Quiero ver la información detallada del pokemon para estar más informado de sus características.
 
@@ -130,7 +126,6 @@ Añadir aqui las fotos del flujo de usuario
 
 El paso siguiente corresponde al prototipado de baja definición, aquí comenzamos ideando e iterando sobre cómo debería verse la aplicación, y qué elementos debería contener para llegar a nuestra meta.
 
-  
 
 ### Workflow y Wireframes
 
@@ -155,10 +150,13 @@ En esta etapa también decidimos incorporar la herramienta de Boostrap, como pla
 
 ## Planificación
 
-Paralelo a este proceso trabajamos de manera digital en trello, project de github. Y analógicamente en el tablero proporcionado en Laboratoria.
+Realizamos una planificación al comienzo del proyecto y volvimos a él cada dos o tres días.  Utilizamos algunas herramientas digitales como  [Trello](https://trello.com/b/1uJrFw7s/proyecto-2), y [Project](https://github.com/Paulinacm/scl-2018-12-bc-core-data-lovers/projects) de github. 
+Y analógicamente en el tablero proporcionado en Laboratoria.
 
 
 aqui fotos de los tableros
+
+
   
   
   
@@ -183,7 +181,7 @@ Versión celular
 
   ![enter image description here](https://lh3.googleusercontent.com/tyUR1n_qPKQocYbX8JlqsxDQFC2kNciOdHfd-lryo5KnkXW95Q6lowOoGxw9wbSp0il15cNrD5Fv "Pokedex, versión celular")
 
-## Stage 4 - Entrevistas con usuarios y Testeos
+## Stage 4 -  Testeos con usuarios
 
 
 1.  Testeo con usuarios
@@ -194,11 +192,28 @@ Versión celular
     
 3.  número de testeos
      
-Mediante la red de contactos de ambas integrantes del equipo, encontramos a personas que son usuarios y no usuarios de Pokemon Go, que nos ayudaron a testear la aplicación.
+ **Momentos de testeo con usuarios**
+ Se realizaron varias entrevistas a usuarios para testear el prototipo de la página.
+ 1. El primer momento se realizó justo
+ 2. El segundo momento se realizó
+ 3. Finalmente se realizó
+ 
+![enter image description here](https://lh3.googleusercontent.com/JJcGwZqoqdK4Z0ouCgqyvDoHejbjhsyiaXFIqi3F-tJ08sEiLmfiVsVmNY3JZyIe9thYgmAK-eZZ "UserTesting")
 
-Estas entrevistas se basaron en una breve entrevista inicial (experiencia previa con la aplicación), luego un testeo basado en el prototipo de Figma (con una tarea específica), donde se les invitó a los entrevistados que utilizaran el demo de la aplicación, y finalmente, se les hicieron algunas preguntas acerca de su satisfacción, usabilidad y utilidad (cómo fue la experiencia, que le cambiarian, sacarían, mejorarian).
+  
+**Entrevistas**
+Las entrevistas se basaron en algunas preguntas iniciales (experiencia previa con la aplicación), luego un testeo basado en el prototipo de Figma (con una tarea específica), donde se les invitó a los entrevistados que utilizaran el demo de la aplicación, y finalmente, se les hicieron algunas preguntas acerca de su satisfacción, usabilidad y utilidad (cómo fue la experiencia, que cambiarian, sacarían, mejorarían).
 
-A partir de lo anterior se encontró que:
+Respuestas:
+
+-   Usuario uno: 
+    
+-   Usuario dos: 
+    
+-   Usuario tres: 
+
+
+A partir de lo anterior se realizaron modificaciones:
 
  - List item
  - ddwd
@@ -208,6 +223,8 @@ A partir de lo anterior se encontró que:
 ### Storyboard  —  Usando la App
 
 Creamos un storyboard para describir la experiencia de un usuario de la aplicación Pokedex. Mediante esta estrategia se puede explorar el producto en un contexto amplio, como si fuera parte de una narrativa mayor. Es una forma económica y efectiva de capturar, relacionar y explorar la aplicación en el mundo real.
+
+insertar aqui storyboard
 
   
 
@@ -231,19 +248,24 @@ La tipografía elegida fue... debido a que
 ## Etapa 5 - El Diseño final
 
 
-La meta del la aplicación web es crear un proceso rápido de resolución de búsqueda de un pokemon.  La versión final esta disponible para verla.
+La meta del la aplicación web es crear un proceso rápido de resolución de búsqueda de un pokemon.  La versión final esta disponible en versión [demo.](https://paulinacm.github.io/scl-2018-12-bc-core-data-lovers/)
 
   
-
-
+  **Pantalla inicio**
+  
+  **Filtro**
+  
+  **Ordenar**
+  
+  **Estadisticas**
   
 La experiencia del usuario esta basada en algunos pasos, donde cada pantalla aparece suficiente información para poder realizar un selección, búsqueda, ordenamiento de la información de los pokemon disponibles.
-A partir de los testeos de usuarios, las decisiones respecto a los diseños se basaron en las necesidades detectadas en estos usuarios.  
+A partir de los testeos con usuarios y sus necesidades, se realizaron las decisiones respecto a los diseños finales de la aplicación.
   
 
 ## Conclusiones
 
-Overall this was a very interesting challenge to be involved with, and it was only possible thanks to the collaboration of 3 client stakeholders (including the tailor herself), 4 online clients, 2 guest users, and the final design/development team.
+
 
 
 
@@ -262,7 +284,3 @@ Overall this was a very interesting challenge to be involved with, and it was on
   
 
 [https://uxdesign.cc/ui-ux-case-study-a-step-by-step-guide-to-the-process-of-designing-a-pet-diet-app-d635b911b648](https://uxdesign.cc/ui-ux-case-study-a-step-by-step-guide-to-the-process-of-designing-a-pet-diet-app-d635b911b648)
-
-  
-
-Highlight your user centered design process: Convey how your design decisions were based on user research, whether that was gathered through user interviews, reviews,
