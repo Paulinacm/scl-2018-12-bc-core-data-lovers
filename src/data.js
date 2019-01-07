@@ -7,18 +7,26 @@ const dataPokemon = document.querySelector("#pokemones .pokemones_list");
 // Creo array para guardar los objetos pokemones y no hacer constantes fetch
 let arrPokemones = []
 
-function createCard(objPokemon){
-  let cardPokemon = document.createElement("div")
-  let cardBody = document.createElement("div")
-  let cardTitle = document.createElement("h5")
-  let imagePokemon = document.createElement("img")
-  let txtBody = "";
+function createCard(objPokemon){ // funcion donde creo la card con la info del pokemon
+  let cardPokemon = document.createElement("div")  // este div modifica todo texto de  latarjeta
+  let cardType = document.createElement("div") // este div, puede modificar toda tarjeta menos el nombre
+  let cardNum = document.createElement("div")
+  let cardTitle = document.createElement("h6") // este div modifica sol oel Titulo o nombre del pokemon
+  let imagePokemon = document.createElement("img") //coloca la imagen en tarjeta
+
 
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
   // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
-  cardPokemon.classList.add("card", "m-1", "p-2");
+  cardPokemon.classList.add("card", "m-3", "p-1", "shadow"); //m:margen ebntre cards p:borde dentro de la cards
   // Asigno atributo SRC a Imagen
-  imagePokemon.setAttribute("src", objPokemon.img);
+  
+//NUMERO
+  cardNum.classList.add("card-num");
+  cardNum.innerHTML = objPokemon.num; 
+  cardPokemon.appendChild(cardNum); 
+
+//IMAGEN
+  imagePokemon.setAttribute("src", objPokemon.img,);
   // Asigno atributo ALT a Imagen
   // Utilizo valor directo del JSON porque namePokemon es un nodo tipo texto y necesito solo un string. Si utilizo namePokemon en el HTML aparecera [HTML Object]
   imagePokemon.setAttribute("alt", "imagen de " + objPokemon.name);
@@ -26,26 +34,20 @@ function createCard(objPokemon){
   imagePokemon.classList.add("card-img-top");
   // Inserto la imagen pokemon al div con clase CSS "card"
   cardPokemon.appendChild(imagePokemon)
+
+//NOMBRE
   // Asigno clase CSS de Bootstrap a Título de card
   cardTitle.classList.add("card-title");
   // Inserto nombre del Pokemon al titulo
-  cardTitle.innerHTML = objPokemon.name;
+  cardTitle.innerHTML = objPokemon.name; //APAREZCA EL NOMBRE(TITULO EN HTML)
   // Inserto "card-title" al div con clase CSS "card" 
-  cardPokemon.appendChild(cardTitle);
-  // Creo texto que insertaré en el body de la card
-  // Escribo HTML en el string, para insertarlo como HTML más adelante
-  txtBody = '<p class="card-text">Pokemon tipo: <strong>' + objPokemon.type + '</strong></p><br/><p class="card-text">Número: <strong>' + objPokemon.num + '</strong></p>'
-  // Asigno clase bootstrap para "card-body"
-  cardBody.classList.add("card-body", "p-0");
-  // Inserto contenido HTML(variable txtBody) antes que termine el html de cardPokemon
-  // No uso appendChild porque txtBody no es un elemento tipo nodo, es un string
-  // Insert insertAdjacentHTML permite insertar un string que contiene HTML en una ubicación específica, en este caso antes de que termine el elemento cardPokemon
-  cardBody.insertAdjacentHTML("beforeend", txtBody);
-  // Inserto "card-title" al div con clase CSS "card" 
-  cardPokemon.appendChild(cardBody);
-  // Insertar DIV creado en JS al documento HTML
+  cardPokemon.appendChild(cardTitle); 
 
-  // devuelvo div creado
+//TIPO
+  cardType.classList.add("card-type");
+  cardType.innerHTML = objPokemon.type; 
+  cardPokemon.appendChild(cardType);
+
   return cardPokemon;
 }
 

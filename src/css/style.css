@@ -1,4 +1,19 @@
-#pokemones .row .card {
-  margin: .5rem;
-  width: calc((100%/6) - 8px)
+#pokemones .card {
+  width: calc((100%/8) - 10px);
+  text-align: center;
+ 
+
 }
+
+
+
+.color1{background: #71babd;}
+.color2{background: #e9ebea;}
+.color3{background: #ffffff;}
+.color4{background: #2b859c;}
+
+.img-fluid{
+  max-width: 100%; 
+  height: auto;
+}
+

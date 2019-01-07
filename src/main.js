@@ -50,7 +50,6 @@ document.getElementById('btn-fire').addEventListener('click', (event) => {
       }
   */
 
-
   /*
   const filtrarTipo = () => {
     const arrayFiltrado = pokemon.filtrarPropiedad(arrayPokemon, tipoPokemon.value);
@@ -66,3 +65,4 @@ document.getElementById('btn-fire').addEventListener('click', (event) => {
   btnFiltrar
 
   */
+
