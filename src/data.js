@@ -53,7 +53,7 @@ pokemonApi.then(result => {
   return result.json();
 }).then(result => {
   arrPokemones = result.pokemon;
-  result.pokemon.forEach(element => {
+  arrPokemones.forEach(element => {
     // Creo el div con la funciónn crearCard, y paso por parametro el objeto element, que contiene la información del pokemon
     const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
@@ -129,24 +129,55 @@ function sortNameZa() {
   });
 }
 
+function filterPokemon(paramFilter){
+  arrPokemones.forEach(element => {
+    console.log(element)
+  });
+}
+/*
 const computeStats = (data, condition) => {
   let avPromedio;
-  const obj = data.map(elemento => elemento.avg_spawns);
+  const obj = arrPokemones.map(element => element.avg_spawns);
   const avgSpawns = obj.reduce((a, b) => a + b);
   const meanSpawns = avgSpawns / obj.length;
 
-  avPromedio = data.filter(elemento => {
+  avPromedio = arrPokemones.filter(element => {
     switch (condition) {
       case 1:
-        return elemento.avg_spawns > meanSpawns;
+        return element.avg_spawns > meanSpawns;
       case 2:
-        return elemento.avg_spawns !== 0 && elemento.avg_spawns < meanSpawns;
+        return element.avg_spawns !== 0 && element.avg_spawns < meanSpawns;
       default:
-        return elemento.avg_spawns === 0;
+        return element.avg_spawns === 0;
     }
   });
   return avPromedio;
 };
+
+
+*/
+//para estadisticas, contar el numero de pokemon x tipo
+/*const cantXType = arrFilterPokemonType.length;
+   const percent = ((cantXType / 151) * 100);
+   arrPercent.push(percent); 
+   */
+
+/*
+const stats = (data, condition) => {
+  let arrPercent = [];
+  for (let i = 0; i < arrPokemones.length; i++) {
+    const arrFilterPokemonType = arrPokemones.filter(compare => (compare.type[0] === arrPokemones[i] || compare.type[1] === arrPokemones[i]));
+    const cantXType = arrFilterPokemonType.length;
+    const percent = ((cantXType / 151) * 100);
+    arrPercent.push(cantXType);
+  }
+  return arrPercent;
+};
+
+window.data = {
+  stats,
+};
+*/
 
 //funciones para filtrar por elemento (type)
 
@@ -175,34 +206,7 @@ function filterPokemons() {
     })
   }
 }
-*/
 
-
-
-
-
-//para estadisticas, contar el numero de pokemon x tipo
-/* const cantXType = arrFilterPokemonType.length;
-   const porcentaje = ((cantXType / 151) * 100);
-   arrPorcentaje.push(porcentaje); 
-*/
-
-/*
-var condition = obj.Pokemon.type
-const stats = (dataPokemon, condition) => {
-  let arrPorcentaje = [];
-  for (let i = 0; i < condition.length; i++) {
-    const arrFilterPokemonType = dataPokemon.filter(compare => (compare.type[0] === condition[i] || compare.type[1] === condition[i]));
-    const cantXType = arrFilterPokemonType.length;
-    arrPorcentaje.push(cantXType);
-  }
-  return arrPorcentaje;
-};
-
-window.data = {
-  stats,
-};
-*/
 
 
 
