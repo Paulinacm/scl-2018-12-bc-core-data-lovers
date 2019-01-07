@@ -17,12 +17,12 @@ function createCard(objPokemon){ // funcion donde creo la card con la info del p
 
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
   // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
-  cardPokemon.classList.add("card", "m-3", "p-1", "shadow"); //m:margen ebntre cards p:borde dentro de la cards
+  cardPokemon.classList.add("card", "m-1", "shadow", "center"); //m:margen ebntre cards p:borde dentro de la cards
   // Asigno atributo SRC a Imagen
   
 //NUMERO
   cardNum.classList.add("card-num");
-  cardNum.innerHTML = objPokemon.num; 
+  cardNum.innerHTML = "#" + objPokemon.num; 
   cardPokemon.appendChild(cardNum); 
 
 //IMAGEN

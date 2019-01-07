@@ -1,10 +1,25 @@
 #pokemones .card {
-  width: calc((100%/8) - 10px);
+  width: calc((100%/9) - 10px);
   text-align: center;
- 
-
+  padding: 5px;
+  
 }
 
+
+.card-num {
+background: #e5e7e7;
+font-size: 12px;
+}
+
+.card-img-top{
+  width: auto ;
+  height: 100px;
+  padding: 1px;
+}
+
+.card-type{
+  font-size: 12px;
+}
 
 
 .color1{background: #71babd;}
