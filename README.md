@@ -309,7 +309,8 @@ Versión Celular
 
 ## Stage 4 - Testeos con usuarios
 
-  ![enter image description here](https://lh3.googleusercontent.com/JJcGwZqoqdK4Z0ouCgqyvDoHejbjhsyiaXFIqi3F-tJ08sEiLmfiVsVmNY3JZyIe9thYgmAK-eZZ  "UserTesting")
+   <p align="center"> 
+   <img src='https://lh3.googleusercontent.com/JJcGwZqoqdK4Z0ouCgqyvDoHejbjhsyiaXFIqi3F-tJ08sEiLmfiVsVmNY3JZyIe9thYgmAK-eZZ'  />
 
   
 
@@ -352,11 +353,13 @@ A partir de lo anterior salieron nuevas ideas para hacer modificaciones:
 Estas son algunas imágenes de los cambios realizados:
 ![](http://subirimagen.me/uploads/20190108141228.jpg)
 A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usuario se centre en el logo. Se creó la imagen de "KANTO" simulando el logo principal y añadimos un Pokémon para llamar la atención y una imagen png de pasto para simular que el Pokémon y el logo estuvieran en un plano principal.
-_____________
 
-![](http://subirimagen.me/uploads/20190108143136.jpg)
+   <p align="center"> 
+   <img src='http://subirimagen.me/uploads/20190108143136.jpg'  /> 
+   
 Se le agrego un conteo de la cantidad de pokemones que existe de cada elemento.
- _____________________
+
+
 
 
 
