@@ -119,8 +119,7 @@ Luego de tener más claro quién sería nuestro usuario, comenzamos el proceso d
 
 Añadir aqui las fotos del flujo de usuario (Baja y alta calidad)
 
-![Flujo ]
-(<a href='http://subirimagen.me/uploads/20190108105647.jpg'></a>)
+![](http://subirimagen.me/uploads/20190108105647.jpg)
 
   
   
