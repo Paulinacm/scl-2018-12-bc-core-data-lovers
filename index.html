@@ -49,25 +49,25 @@ MODAL
 
   <!-- SECCION HEADER PORTADA --> 
   
-    <div class="text-center">
+    <div class="">
       <img src="/src/img/portadapokemon.jpg" class="img-fluid" alt="">
   </div>
   
   <!----- SECCION MENU -----> 
 
-  <div class="col-sm-12 color4">
+  <div class="col-md-12 color4">
     <!--  sección búsqueda  -->
-    <div class="input-group mb-3 col-sm-3 col-lg-6 offset-lg-3">
+    <div class="input-group offset-3 col-lg-6">
       <input type="text" id="invoke-pokemon" class="form-control" placeholder="Busca tu Pokemon">
       <button class="btn btn-primary">Buscar</button>
     </div>
     <!--  sección filtrar y ordenar  -->
-    <div class="input-group">
+    <div class="input-group offset-3 col-lg-6">
      <!--  sección filtrar-->
-     <div class="col-4">
+     <div class="col-8">
       <select class="form-control" id="filterType">
        <option value = "Tipos">Select Type</option>
-       <option data-thumbnail= "/src/img/iconos elementos/DRAGON.png" value = "Bug">Bug</option>
+       <option value = "Bug">Bug</option>
        <option value = "Dragon"> Dragon</option>
        <option value = "Electric">Electric</option>
        <option value = "Fighting">Fighting</option>
@@ -86,7 +86,7 @@ MODAL
       </select>
      </div>
      <!--  sección ordenar -->
-     <div class="col-2">
+     <div class="col-4">
       <select class="form-control" id="sort">
        <option value ="selected">Sort by</option>
        <option value ="nameaz">A - Z</option>
@@ -105,10 +105,10 @@ MODAL
    <div class="d-none d--block  d-none d-sm-block  col-md-1  col-lg-1  col-xl-1    color3">IZQ</div>
    <!-- seccion central--> 
    <div class="col-12           col-sm-12          col-md-10 col-lg-10  col-xl-10    color2">
-    <div class="container-fluid" id="pokemones">
+    <div class="container" id="pokemones">
 
      <div class="pokemones_list row"></div>
-      <div class="pokemones row"></div>
+      <div class="pokemones row mt-4"></div>
     </div>
    </div>
    <!-- seccion derecha --> 
@@ -116,18 +116,21 @@ MODAL
   </div>
 
   <!-----  SECCION FOOTER ----->
- <div class="row">
-  <div class="col-12 color4">
+ 
+  <div class="col-xl-12 color4">
    <div class="wrapper footer">
     <ul>
      <li class="about">
-      <p>Pokemon es una aplicación....</p>
+      <p>Pokemon es una aplicación....
+
+
+      </p>
      </li>
     </ul>
    </div>
   <div class="copyrights wrapper"> 2018 </div>
     </div>
-  </div>
+  
 </div> 
 <!------------------------ DIV FINAL CONTIENE TODAS LAS COLUMNAS}-------------------------> 
 <div id="root"></div>

@@ -1,16 +1,9 @@
-#pokemones .card {
-  width: calc((100%/9) - 10px);
-  text-align: center;
-  padding: 5px;
-  
-}
-
 
 .card-num {
 background: #e5e7e7;
-font-size: 12px;
+font-size: 11px;
+border-radius: 34em;
 }
-
 .card-img-top{
   width: auto ;
   height: 100px;
@@ -21,14 +14,29 @@ font-size: 12px;
   font-size: 12px;
 }
 
+.container-fluid {
+  padding-right: 0px; 
+  padding-left: 0px; 
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
 
 .color1{background: #71babd;}
 .color2{background: #e9ebea;}
 .color3{background: #ffffff;}
-.color4{background: #2b859c;}
+.color4{background: #5aa3b9;}
 
-.img-fluid{
-  max-width: 100%; 
-  height: auto;
+.card {
+width: 140px;
+height: 190px;
+margin: 2em;
+background:#fff;
+box-shadow: 0 20px 50px rgba(0,0,0,.1);
+border-radius: 1em;
+text-align: center;
+align-content: flex-start;
+
 }
-
