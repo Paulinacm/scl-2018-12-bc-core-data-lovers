@@ -50,7 +50,7 @@ A partir de esta búsqueda inicial, pasamos acercamos a varias compañeras que s
 
   
 
-Nos dimos cuenta que en solo esta pequeña muestra de entrevistadas habían algunas diferencias, ya que por ejemplo para algunas era relevante saber …. Mientras que para otras no. Esto lo atribuimos a la experiencia previa en relación con el juego, es decir aquellas con más experiencia y conocimiento del juego, parecen requerir menos información de los pokemon, que sería provista por nuestra aplicación, lo que ayudó a definir mejor a nuestro usuario:
+Nos dimos cuenta que en solo esta pequeña muestra de entrevistadas habían algunas diferencias, ya que por ejemplo para algunas era relevante tener informacion de las debilidades de los Pokemones que aparecen en la modalidad "Excursiones" para ir mejor preparadas a dicho evento, otras sin embargo al ser jugadoras con experiencia y mas avanzadas no le es tan relevante dicha informacion y esto lo atribuimos a que por el tiempo que llevan jugando la mayoria de sus Pokémones poseen gran nivel, es decir aquellas con más experiencia y conocimiento del juego, parecen requerir menos información de los pokemones, que sería provista por nuestra aplicación, lo que ayudó a definir mejor a nuestro usuario:
 
   
 ***Definición del usuario***
@@ -73,9 +73,9 @@ Criterios de Aceptación:
  - [ ] Quiero que el filtrado se muestre en una lista desplegable 
  - [ ] Quiero que en la búsqueda aparezca el nombre y la foto del pokemon
  - [ ] Quiero que el listado tenga colores relacionados al tipo de elemento del pokemon
- - [ ]  Quiero que la página sea visible en el móvil y en mi computador.
+ - [ ] Quiero que la página sea visible en el móvil y en mi computador.
+ - [ ] Quiero poder darle clic a la tarjeta del Pokémon y ver un modal con más información.
 
-    
 
   
 
@@ -87,9 +87,10 @@ Criterios de Aceptación:
 
  - [ ] Quiero elegir la opción de orden en una lista desplegable
  - [ ] Quiero ordenar de la A a la Z
- - [ ]  Quiero ordenar de la Z a la A  
+ - [ ] Quiero ordenar de la Z a la A  
  - [ ] Quiero ordenar el id número de forma ascendente
  - [ ] Quiero ordenar el id número de forma descendente
+ - [ ] Quiero poder darle clic a la tarjeta del Pokémon y ver un modal con más información.
 
     
 3. Enunciado: "Yo como usuario de la aplicación"
@@ -103,10 +104,9 @@ Criterios de Aceptación:
 
     
 4.Enunciado: "Yo como usuario de la aplicación"
-Quiero saber la cantidad de Pokemones que existe de cada elemento para saber qué cantidad existe de cada uno.
+Quiero saber la cantidad de Pokemones que existe de cada elemento para saber qué cantidad existe de cada uno y cuantos me faltan por atrapar.
 
 Criterios de Aceptación:
-
  - [ ] Quiero poder ver información estadística adicional del Pokemon que seleccione.
 
   
@@ -117,7 +117,10 @@ Luego de tener más claro quién sería nuestro usuario, comenzamos el proceso d
 
   
 
-Añadir aqui las fotos del flujo de usuario
+Añadir aqui las fotos del flujo de usuario (Baja y alta calidad)
+
+![enter image description here]
+(https://ibb.co/ZhY39Dt)
 
   
   
