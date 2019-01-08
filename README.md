@@ -197,6 +197,13 @@ Versión celular
  **Momentos de testeo con usuarios**
  Se realizaron varias entrevistas a usuarios para testear el prototipo de la página.
  1. El primer momento se realizó justo
+
+  Experiencia de usuario: 
+  Imagina que Necesitas conocer las características de cierto pokémon de la región de Kanto, Sabes que el pokemon es de tipo Grass y su número de identificación es el  # 001, para buscarlo vas a usar la siguiente aplicación.
+  Filtraras  por ELEMENTO de tipo GRASS
+  Y cuando veas el listado buscaras el pokemon # 001 y lo seleccionaras para ver sus características.
+
+
  2. El segundo momento se realizó
  3. Finalmente se realizó
  
