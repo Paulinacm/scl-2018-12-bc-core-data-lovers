@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Data Lovers</title>
   <meta charset="utf-8">
@@ -10,22 +9,16 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
+<!--  body section  -->
 <body>
-
-<!--DIV INICIAL CONTIENE TODAS LAS COLUMNAS-->
+  <!------------------------ DIV INICIAL CONTIENE TODAS LAS COLUMNAS}------------------------->
   <div class="container-fluid">
-
-<!-- SECCION HEADER PORTADA -->
-
+    <!-- SECCION HEADER PORTADA -->
     <div class="text-center">
       <img src="/src/img/portadapokemon.jpg" class="img-fluid" alt="">
     </div>
-
-<!-- SECCION MENU -->
-
-    <div class="menu col-sm-12 color4">
-      
+    <!----- SECCION MENU ----->
+    <div class="col-sm-12 color4">
              <!--  sección filtrar y ordenar  -->
           <div class="input-group offset-0"> 
 
@@ -63,15 +56,10 @@
 
           </div>
      </div>
-
-
 <!--SECCION CUERPO --> 
-
   <div class="row">
-   
         <!-- seccion izquierda --> 
         <div class="d-none d--block  d-none d-sm-block  col-md-1    col-lg-1   col-xl-1    color3"></div>
-  
         <!-- seccion central--> 
         <div class="central col-12   col-sm-12          col-md-10   col-lg-10  col-xl-10    color2">
           <div class="" id="pokemones">
@@ -79,26 +67,24 @@
              <div id="chart_div"></div>
           </div>
         </div>
-
         <!-- seccion derecha --> 
         <div class="d-none d--block  d-none d-sm-block  col-md-1     col-lg-1  col-xl-1    color3"></div>
-
   </div>
-
-
-
-  <!-----  SECCION FOOTER ----->
- 
-  <div class="footer col-xl-12 color4">
-    <hr/>2018<hr/> </div>
-  </div>
- 
-</div>
-      <!-- DIV FINAL CONTIENE TODAS LAS COLUMNAS}-->
-
-
-
-      <script src="https://www.gstatic.com/charts/loader.js"></script>
+            <div id="chart_div"></div>
+      </div>
+      <!-- seccion central-->
+      <div class="col-9 color2">
+        <div class="container-fluid" id="pokemones">
+          <div class="pokemones_list row"></div>
+        </div>
+      </div>
+      <!-----  SECCION FOOTER ----->
+      <div class="wrapper footer">
+        2018
+      </div>
+      <!------------------------ DIV FINAL CONTIENE TODAS LAS COLUMNAS}------------------------->
+      <div id="root"></div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
 </body>
