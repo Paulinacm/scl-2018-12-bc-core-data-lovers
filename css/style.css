@@ -7,13 +7,28 @@ border-radius: 34em;
 .card-img-top{
   width: auto ;
   height: 100px;
-  padding: 1px;
+  
+}
+
+.cardTitle{
+  font-size: 10px;
 }
 
 .card-type{
   font-size: 12px;
 }
 
+.footer{
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
+.menu {
+ padding:  15px 77px 15px 77px;
+}
 .container-fluid {
   padding-right: 0px; 
   padding-left: 0px; 
@@ -24,10 +39,10 @@ border-radius: 34em;
   align-items: baseline;
 }
 
-.color1{background: #71babd;}
+
 .color2{background: #e9ebea;}
 .color3{background: #ffffff;}
-.color4{background: #5aa3b9;}
+.color4{background: #455FA6;}
 
 .card {
 width: 140px;
@@ -39,4 +54,8 @@ border-radius: 1em;
 text-align: center;
 align-content: flex-start;
 
+}
+
+.central{
+  padding: 20px 0px 20px 40px;
 }

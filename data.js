@@ -22,11 +22,11 @@ function createCard(objPokemon) { // funcion donde creo la card con la info del 
 
   //NUMERO
   cardNum.classList.add("card-num");
-  cardNum.innerHTML = objPokemon.num;
+  cardNum.innerHTML = "#" + objPokemon.num;
   cardPokemon.appendChild(cardNum);
 
   //IMAGEN
-  imagePokemon.setAttribute("src", objPokemon.img, );
+  imagePokemon.setAttribute("src", objPokemon.img,);
   // Asigno atributo ALT a Imagen
   // Utilizo valor directo del JSON porque namePokemon es un nodo tipo texto y necesito solo un string. Si utilizo namePokemon en el HTML aparecera [HTML Object]
   imagePokemon.setAttribute("alt", "imagen de " + objPokemon.name);
