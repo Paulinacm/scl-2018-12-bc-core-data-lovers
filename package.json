@@ -10,11 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^22.1.2",
-    "jest": "^23.6.0"
+    "eslint-plugin-jest": "^22.1.2"
   },
   "devDependencies": {
     "eslint": "^5.11.1",
-    "htmlhint": "^0.10.1"
+    "htmlhint": "^0.10.1",
+    "jest": "^23.6.0"
   }
 }
