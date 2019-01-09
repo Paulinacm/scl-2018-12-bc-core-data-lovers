@@ -17,13 +17,18 @@ function createCard(objPokemon) { // funcion donde creo la card con la info del 
 
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
   // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
-  cardPokemon.classList.add("card", "m-3", "p-1", "shadow"); //m:margen ebntre cards p:borde dentro de la cards
+  cardPokemon.classList.add("card", "m-3", "p-2", "shadow"); //m:margen ebntre cards p:borde dentro de la cards
   // Asigno atributo SRC a Imagen
 
   //NUMERO
   cardNum.classList.add("card-num");
+<<<<<<< HEAD
   cardNum.innerHTML = objPokemon.num;
   cardPokemon.appendChild(cardNum);
+=======
+  cardNum.innerHTML = "#" + objPokemon.num; 
+  cardPokemon.appendChild(cardNum); 
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
 
   //IMAGEN
   imagePokemon.setAttribute("src", objPokemon.img, );
@@ -66,6 +71,9 @@ pokemonApi.then(result => {
   // eslint-disable-next-line no-console
   console.log(err);
 });
+
+
+
 
 //funciones para ordenar de forma descendete y ascendente
 // Se factorizan todas las funciones para que devuelven el array en el orden deseado
@@ -114,6 +122,7 @@ function sortNameZa(arrayPokemones) {
   return arrPokemonesNameZa
 }
 
+<<<<<<< HEAD
 //FILTRAR POR TYPE
 // paso array inicial y tipo de filtro
 // devuelve un nuevo array solo con pokemones filtrados
@@ -122,6 +131,43 @@ function filterPokemon(arrayPokemones, paramFilter) {
   arrayPokemones.forEach(element => {
     if (element.type.includes(paramFilter)) {
       arrFiltrado.push(element)
+=======
+function filterPokemon(paramFilter){
+  arrPokemones.forEach(element => {
+    console.log(element)
+  });
+}
+
+
+
+//FILTRAR POR TYPE
+function filterPokemon(paramFilter) {
+  // Elimino todas las cards 
+  dataPokemon.innerHTML = "";
+  arrPokemones.forEach(element => {
+    if (element.type.includes(paramFilter)) {
+      const cardPokemon = createCard(element)
+      dataPokemon.appendChild(cardPokemon);
+    }
+  });
+}
+
+/*
+const computeStats = (data, condition) => {
+  let avPromedio;
+  const obj = arrPokemones.map(element => element.avg_spawns);
+  const avgSpawns = obj.reduce((a, b) => a + b);
+  const meanSpawns = avgSpawns / obj.length;
+
+  avPromedio = arrPokemones.filter(element => {
+    switch (condition) {
+      case 1:
+        return element.avg_spawns > meanSpawns;
+      case 2:
+        return element.avg_spawns !== 0 && element.avg_spawns < meanSpawns;
+      default:
+        return element.avg_spawns === 0;
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
     }
   })
   return arrFiltrado

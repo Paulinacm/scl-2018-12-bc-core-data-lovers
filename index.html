@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <!--  body section  -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
 <body>
 
   <!-- seccion prueba 
@@ -51,14 +54,77 @@ MODAL
 
     <!-- SECCION HEADER PORTADA -->
 
+<<<<<<< HEAD
     <div class="text-center">
       <img src="/src/img/portadapokemon.jpg" class="img-fluid" alt="">
+=======
+  <!-- SECCION HEADER PORTADA --> 
+  
+    <div class="">
+      <img src="/src/img/portadapokemon.jpg" class="img-fluid" alt="">
+  </div>
+  
+  <!----- SECCION MENU -----> 
+
+  <div class="col-md-12 color4">
+    <!--  sección búsqueda  -->
+    <div class="input-group offset-3 col-lg-6">
+      <input type="text" id="invoke-pokemon" class="form-control" placeholder="Busca tu Pokemon">
+      <button class="btn btn-primary">Buscar</button>
+    </div>
+    <!--  sección filtrar y ordenar  -->
+    <div class="input-group offset-3 col-lg-6">
+     <!--  sección filtrar-->
+     <div class="col-8">
+      <select class="form-control" id="filterType">
+       <option value = "Tipos">Select Type</option>
+       <option value = "Bug">Bug</option>
+       <option value = "Dragon"> Dragon</option>
+       <option value = "Electric">Electric</option>
+       <option value = "Fighting">Fighting</option>
+       <option value = "Fire">Fire</option>
+       <option value = "Flying">Flying</option>
+       <option value = "Ghost">Ghost</option>
+       <option value = "Grass">Grass</option>
+       <option value = "Ground">Ground</option>
+       <option value = "Ice">Ice</option>
+       <option value = "Normal">Normal</option>
+       <option value = "Poison">Poison</option>
+       <option value ="Psychic">Psychic</option>
+       <option value ="Rock">Rock</option>
+       <option value ="Steel">Steel</option>
+       <option value ="Water">Water</option>
+      </select>
+     </div>
+     <!--  sección ordenar -->
+     <div class="col-">
+      <select class="form-control" id="sort">
+       <option value ="selected">Sort by</option>
+       <option value ="nameaz">A - Z</option>
+       <option value ="nameza">Z - A</option>
+       <option value ="ascending"> 001 - 150</option>
+       <option value ="descending">150 - 001</option>
+      </select>
+     </div>
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
     </div>
 
+<<<<<<< HEAD
     <!----- SECCION MENU ----->
 
     <div class="col-sm-12 color4">
       
+=======
+  <div class="row">
+   <!-- seccion izquierda --> 
+   <div class="d-none d--block  d-none d-sm-block  col-md-1  col-lg-1  col-xl-1    color3">IZQ</div>
+   <!-- seccion central--> 
+   <div class="col-12           col-sm-12          col-md-10 col-lg-10  col-xl-10    color2">
+    <div class="container" id="pokemones">
+
+     <div class="pokemones_list row"></div>
+      <div class="pokemones row mt-4"></div>
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
     </div>
     <!----- SECCION CUERPO ----->
     <div class="row">
@@ -104,6 +170,7 @@ MODAL
           </div>
         </div>
 
+<<<<<<< HEAD
             <div id="chart_div"></div>
       </div>
       <!-- seccion central-->
@@ -121,6 +188,31 @@ MODAL
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
       <script src="data.js"></script>
       <script src="main.js"></script>
+=======
+  <!-----  SECCION FOOTER ----->
+ 
+  <div class="col-xl-12 color4">
+   <div class="wrapper footer">
+    <ul>
+     <li class="about">
+      <p>Pokemon es una aplicación....
+
+
+      </p>
+     </li>
+    </ul>
+   </div>
+  <div class="copyrights wrapper"> 2018 </div>
+    </div>
+  
+</div> 
+<!------------------------ DIV FINAL CONTIENE TODAS LAS COLUMNAS}-------------------------> 
+<div id="root"></div>
+<script src="./data/pokemon/pokemon.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
+      
+>>>>>>> 2b150f4addf1c6aa04d77f9e864370502ec1e59f
 </body>
 
 </html>
