@@ -120,33 +120,6 @@ const outputFilterNum = [{
   }]
 }];
 
-const outputPreEvolution = [
-  [{
-      num: '001',
-      name: 'Bulbasaur',
-      img: 'http://www.serebii.net/pokemongo/pokemon/001.png'
-    },
-    {
-      num: '002',
-      name: 'Ivysaur',
-      img: 'http://www.serebii.net/pokemongo/pokemon/002.png'
-    }
-  ]
-];
-
-const outputNextEvolution = [
-  [{
-      num: '002',
-      name: 'Ivysaur',
-      img: 'http://www.serebii.net/pokemongo/pokemon/002.png'
-    },
-    {
-      num: '003',
-      name: 'Venusaur',
-      img: 'http://www.serebii.net/pokemongo/pokemon/003.png'
-    }
-  ]
-];
 
 const inputOrderName = [{
     'id': 63,
