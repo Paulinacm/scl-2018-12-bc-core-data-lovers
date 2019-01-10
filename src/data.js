@@ -67,9 +67,6 @@ pokemonApi.then(result => {
   console.log(err);
 });
 
-
-
-
 //funciones para ordenar de forma descendete y ascendente
 // Se factorizan todas las funciones para que devuelven el array en el orden deseado
 function sortNumDesc(arrayPokemones) {
@@ -167,7 +164,6 @@ function createGoogleChart(arrayPokemones) {
     data.addRows([
       ['Pertenece únicamente a 1 tipo de pokemon', type1Elem],
       ['Pertenece a 2 tipos de pokemon', type2Elem],
-      ['Pertenece a más de 2 tipos de pokemon', type2More]
     ]);
 
     if (filterType == "") {
@@ -241,16 +237,5 @@ function drawPokemones(){
   createGoogleChart(arrPokemonesDraw)
 }
 
-
 document.getElementById("filterType").addEventListener('change',drawPokemones)
 document.getElementById("sort").addEventListener('change', drawPokemones)
-
-
-
-/*
-//esta es una función de ejemplo
-const data = POKEMON.pokemon; //guardo en una constante el arreglo de objetos con los pokemones.
-//console.log(data);
-
-
-*/

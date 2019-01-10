@@ -1,4 +1,17 @@
 //ACA VA EL DOM, la interaccion, se llama al data.js
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ejemplo de clases
 // const resultadoNombres = nombrePokemones(data); // guardo en la constante el resultado de mi función nombrePokemones (lo que está retornando)
 //console.log(resultadoNombres);
@@ -23,12 +36,6 @@ const filterAsType = document.getElementById('type-pokemon');
 const filterAsEgg = document.getElementById('eggs-pokemon');
 const filterAsWeaknesses = document.getElementById('weaknesses-pokemon');
 */
-
-
-
-
-
-
 
 
 /*
