@@ -5,11 +5,63 @@
   flex-wrap: wrap;
 }
 
+/*MENU*/
+.menu {
+  padding: 15px 15px;
+}
+
+/*MENU STICKY*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  z-index: 500;
+}
+
+.filter{
+  align-self: center;
+}
+
+.ordenar{
+  align-self: center;
+
+  
+}
+.form-control{
+     font-size: 13px;  
+     color: #0a1944;
+     
+}
+.input-group{
+justify-content: center;
+
+}
+.arrowup{
+ border: #0a1944;
+}
+    
+/*CUERPO , PADDING PARA CENTRAR LUGR DE LOS POKMONES Y MENU :( */
+.central{
+  padding: 12px 25px 25px 25px;
+ }
+
+ 
+ /*AJUSTAR CARD POKEMON EENTRADAS*/
+.pokemones_list{
+  display: flex;
+  justify-content: center;
+}
+
 /*TARJETA CARD CONTENEDORA*/
 .card {
-  width: 130px;
+  width: auto;
   height: 210px;
-  margin: 1em;
   background:#fff;
   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1em;
@@ -40,29 +92,13 @@ border-radius: 34em;
   font-size: 12px;
 }
 
-/*MENU*/
-.menu {
-  padding: 20px 20px;
-  
-}
-
-.filter{
-  margin: 0 auto;
-}
-.ordenar{
-    margin: 0 auto;
-  
-}
-
-/*CUERPO , PADDING PARA CENTRAR LUGR DE LOS POKMONES Y MENU :( */
-.central{
-  padding: 20px 20px;
-  
-  margin: 0 auto;
-}
-
-.row{
-  margin: 0 auto;
+/*GRAFICO CALCULO*/
+.grafic{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  padding: 40px;
 }
 
 /*FOOTER*/
@@ -73,8 +109,8 @@ border-radius: 34em;
   color: #ffffff;
 }
 
+
 .color2{background: #dbeafd;}
 .color3{background: #ffffff;}
 .color4{background: #455FA6;}
-
 
