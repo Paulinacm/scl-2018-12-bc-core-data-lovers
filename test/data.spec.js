@@ -11,7 +11,6 @@ describe('dataLover', () => {
 
 
 /* el ejemplo del trabajo 
-
 require('../src/data.js');
 
 const input = [{
@@ -48,79 +47,6 @@ const input = [{
   }
 ];
 
-const POKEMON = [{
-    'id': 1,
-    'num': '001',
-    'name': 'Bulbasaur',
-    'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
-    'next_evolution': [{
-      'num': '002',
-      'name': 'Ivysaur'
-    }, {
-      'num': '003',
-      'name': 'Venusaur'
-    }]
-  },
-
-  {
-    'id': 2,
-    'num': '002',
-    'name': 'Ivysaur',
-    'img': 'http://www.serebii.net/pokemongo/pokemon/002.png',
-    'prev_evolution': {
-      'num': '001',
-      'name': 'Bulbasaur'
-    },
-    'next_evolution': {
-      'num': '003',
-      'name': 'Venusaur'
-    }
-  },
-
-  {
-    'id': 3,
-    'num': '003',
-    'name': 'Venusaur',
-    'img': 'http://www.serebii.net/pokemongo/pokemon/003.png',
-    'prev_evolution': [{
-      'num': '001',
-      'name': 'Bulbasaur'
-    }, {
-      'num': '002',
-      'name': 'Ivysaur'
-    }]
-  },
-
-  {
-    'id': 4,
-    'num': '004',
-    'name': 'Charmander',
-    'img': 'http://www.serebii.net/pokemongo/pokemon/004.png',
-    'next_evolution': [{
-      'num': '005',
-      'name': 'Charmeleon'
-    }, {
-      'num': '006',
-      'name': 'Charizard'
-    }]
-  },
-];
-
-const outputFilterNum = [{
-  'id': 1,
-  'num': '001',
-  'name': 'Bulbasaur',
-  'img': 'http://www.serebii.net/pokemongo/pokemon/001.png',
-  'next_evolution': [{
-    'num': '002',
-    'name': 'Ivysaur'
-  }, {
-    'num': '003',
-    'name': 'Venusaur'
-  }]
-}];
-
-
 const inputOrderName = [{
     'id': 63,
     'num': '063',
@@ -155,7 +81,7 @@ const inputOrderName = [{
   }
 ];
 
-const outputOrderNameAZ = [{
+const ouputOrderNameAZ = [{
     'id': 63,
     'num': '063',
     'name': 'Abra',
@@ -189,7 +115,7 @@ const outputOrderNameAZ = [{
   }
 ];
 
-const outputOrderNameZA = [{
+const ouputOrderNameZA = [{
     'id': 87,
     'num': '087',
     'name': 'Dewgong',
@@ -222,6 +148,7 @@ const outputOrderNameZA = [{
     'weaknesses': ['Bicho', 'Fantasma', 'Dark']
   }
 ];
+
 
 const inputOrder = [{
     'id': 1,
@@ -245,7 +172,7 @@ const inputOrder = [{
   }
 ];
 
-const outputOrderAsc = [{
+const ouputOrderAsc = [{
     'id': 1,
     'num': '001',
     'name': 'Bulbasaur'
@@ -267,7 +194,7 @@ const outputOrderAsc = [{
   }
 ];
 
-const outputOrderDesc = [{
+const ouputOrderDesc = [{
     'id': 4,
     'num': '004',
     'name': 'Charmander'
@@ -290,7 +217,7 @@ const outputOrderDesc = [{
 ];
 
 
-const output4 = [{
+const ouput4 = [{
   'id': 4,
   'num': '004',
   'name': 'Charmander',
@@ -299,7 +226,7 @@ const output4 = [{
   'weaknesses': ['Agua', 'Tierra', 'Roca']
 }, ];
 
-const output5 = [{
+const ouput5 = [{
     'id': 1,
     'num': '001',
     'name': 'Bulbasaur',
@@ -339,41 +266,28 @@ const inputStats = [{
 
 const inputStats2 = ['Dragon'];
 
+
 describe('data', () => {
   it('Debería ser un objeto', () => {
     expect(typeof data).toBe('object');
   });
 });
 
-describe('data.numFilter', () => {
-  it('is a function', () => {
-    expect(typeof window.data.numFilter).toBe('function');
-  });
-
-  it('num = null Debería retornar todo', () => {
-    expect(window.data.numFilter(POKEMON, '')).toEqual(POKEMON);
-  });
-  it('Debería retornar a Bulbasaur si input = 001', () => {
-    expect(window.data.numFilter(POKEMON, '001')).toEqual(outputFilterNum);
-  });
-});
-
-
 describe('data.sortData', () => {
   it('Debería ser una función', () => {
     expect(typeof window.data.sortData).toBe('function');
   });
   it('Debería retornar un array de objetos con los datos de ID ordenado de manera ascendente', () => {
-    expect(window.data.sortData(inputOrder, 0, 0)).toEqual(outputOrderAsc);
+    expect(window.data.sortData(inputOrder, 0, 0)).toEqual(ouputOrderAsc);
   });
   it('Debería retornar un array de objetos con los datos de ID ordenado de manera descendente', () => {
-    expect(window.data.sortData(inputOrder, 0, 1)).toEqual(outputOrderDesc);
+    expect(window.data.sortData(inputOrder, 0, 1)).toEqual(ouputOrderDesc);
   });
   it('Debería retornar un array de objetos con los nombres de los pokemon ordenado de la A a la Z', () => {
-    expect(window.data.sortData(inputOrderName, 1, 0)).toEqual(outputOrderNameAZ);
+    expect(window.data.sortData(inputOrderName, 1, 0)).toEqual(ouputOrderNameAZ);
   });
   it('Debería retornar un array de objetos con los nombres de los pokemon ordenado de la Z a la A', () => {
-    expect(window.data.sortData(inputOrderName, 1, 1)).toEqual(outputOrderNameZA);
+    expect(window.data.sortData(inputOrderName, 1, 1)).toEqual(ouputOrderNameZA);
   });
 });
 
@@ -382,10 +296,10 @@ describe('data.filterData', () => {
     expect(typeof window.data.filterData).toBe('function');
   });
   it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego', () => {
-    expect(window.data.filterData(input, 'Type', 'Fuego')).toEqual(output4);
+    expect(window.data.filterData(input, 'Type', 'Fuego')).toEqual(ouput4);
   });
   it('Debería retornar un array de objetos con los pokemones que se encuentren en Huevos de 2 km', () => {
-    expect(window.data.filterData(input, 'Egg', '2 km')).toEqual(output5);
+    expect(window.data.filterData(input, 'Egg', '2 km')).toEqual(ouput5);
   });
 });
 
@@ -394,17 +308,18 @@ describe('data.searchByFilter', () => {
     expect(typeof window.data.searchByFilter).toBe('function');
   });
 
-  it('Debería retornar a Charmander, si busco por ID input = 004', () => {
-    expect(window.data.searchByFilter(output5, '004', 0)).toEqual(output4);
+  it('Debería retornar un array de objetos con los pokemones que sean de tipo Fuego, si elijo opc Tipo e inputText = Fuego', () => {
+    expect(window.data.searchByFilter(ouput5, 'Fuego', 2)).toEqual(ouput4);
   });
-  it('Debería retornar un array de objetos con el pokemon Charmander, si busco por Nombre input = Charmander', () => {
-    expect(window.data.searchByFilter(output5, 'Charmander', 1)).toEqual(output4);
+
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc ID y input=4', () => {
+    expect(window.data.searchByFilter(ouput5, '004', 0)).toEqual(ouput4);
   });
-  it('Deberia retornar las pre evoluciones, input = 003', () => {
-    expect(window.data.searchByFilter(POKEMON, '003', 4)).toEqual(outputPreEvolution);
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Nombre e inputText = Charmander', () => {
+    expect(window.data.searchByFilter(ouput5, 'Charmander', 1)).toEqual(ouput4);
   });
-  it('Deberia retornar las siguientes evoluciones, input = 001', () => {
-    expect(window.data.searchByFilter(POKEMON, '001', 5)).toEqual(outputNextEvolution);
+  it('Debería retornar un array de objetos con el pokemon, si elijo opc Debilidad e inputText = Agua', () => {
+    expect(window.data.searchByFilter(ouput5, 'Agua', 3)).toEqual(ouput4);
   });
 });
 
@@ -412,9 +327,7 @@ describe('data.stats', () => {
   it('Debería ser una función', () => {
     expect(typeof window.data.stats).toBe('function');
   });
-  it('Debería retornar el % de pokemones de tipo Dragon', () => {
-    expect(window.data.stats(inputStats, inputStats2)).toEqual([1.9867549668874174]);
+  it('Debería retornar la cantidad de pokemones de tipo Dragon', () => {
+    expect(window.data.stats(inputStats, inputStats2)).toEqual([3]);
   });
 });
-
-*/

@@ -1,8 +1,9 @@
-# Pokemon Go. Pokedex-Kanto
 
-  
+# Pokemon Go. 
+## Pokedex-Kanto
+![enter image description here](https://lh3.googleusercontent.com/uNEjef0qeKg4iD-bV10uCq6R5dVNOceTKzv_MBc5xzAGYa1opgzcDIQQIXpQDLuL_rEGIsRhHszA "portada")
 
-  
+
 
 ## Contexto
 
