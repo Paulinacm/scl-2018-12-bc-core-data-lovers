@@ -3,97 +3,87 @@
 <head>
   <title>Data Lovers</title>
   <meta charset="utf-8">
-  <meta name="description" content="Responsive html5/css3 home page website template" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-
 <!--  BODY  -->
 <body>
-
   <!--DIV INICIAL CONTIENE TODAS LAS COLUMNAS-->
   <div class="container-fluid">
-  
     <!-- SECCION HEADER PORTADA -->
-  <div class="text-center">
-      <img src="/src/../img/logopokemon.png" class="img-fluid" alt="Image Portada Pokemon">
+    <div class="text-center">
+      <img src="/src/img/portadapokemon.jpg" class="img-fluid" alt="Image Portada Pokemon">
     </div>
     <!-- SECCION MENU -->
     <ul>
       <div class="menu col-sm-12 color4">
-             <!--  Sección filtrar y ordenar  -->
-             <!--  sección filtrar-->
-             <div class="filter col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4"> 
-               <select class="form-control" id="filterType">
-                <option value="" selected>Filter by Type</option>
-                <option value="Bug">Bug</option>
-                <option value="Dragon">Dragon</option>
-                <option value="Electric">Electric</option>
-                <option value="Fighting">Fighting</option>
-                <option value="Fire">Fire</option>
-                <option value="Flying">Flying</option>
-                <option value="Ghost">Ghost</option>
-                <option value="Grass">Grass</option>
-                <option value="Ground">Ground</option>
-                <option value="Ice">Ice</option>
-                <option value="Normal">Normal</option>
-                <option value="Poison">Poison</option>
-                <option value="Psychic">Psychic</option>
-                <option value="Rock">Rock</option>
-                <option value="Water">Water</option>
-               </select>
-             </div>
-             <!--  sección ir arriba -->
-             <div class="arrowup">
-               <a href="#">
-                 <img src="/src/img/images.png" title="Ir arriba"/>
-                </a>
-              </div>
-              <!--  sección ordenar -->
-               <div class="ordenar col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"> 
-                <select class="form-control" id="sort">
-                  <option value="ascending">Sort by: 001 - 151</option>
-                  <option value="descending">Sort by: 151 - 001</option>
-                  <option value="nameaz">Sort by: A-Z</option>
-                  <option value="nameza">Sort by: Z-A</option>
-                </select>
-               </div>
+        <!--  sección filtrar y ordenar  -->
+        <div class="input input-group">
+          <!--  sección filtrar-->
+          <div class="filter col-5 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <select class="form-control" id="filterType">
+              <option value="" selected>Filter by Type</option>
+              <option value="Bug">Bug</option>
+              <option value="Dragon">Dragon</option>
+              <option value="Electric">Electric</option>
+              <option value="Fighting">Fighting</option>
+              <option value="Fire">Fire</option>
+              <option value="Flying">Flying</option>
+              <option value="Ghost">Ghost</option>
+              <option value="Grass">Grass</option>
+              <option value="Ground">Ground</option>
+              <option value="Ice">Ice</option>
+              <option value="Normal">Normal</option>
+              <option value="Poison">Poison</option>
+              <option value="Psychic">Psychic</option>
+              <option value="Rock">Rock</option>
+              <option value="Water">Water</option>
+            </select>
           </div>
-     </div>
+          <!--  sección ir arriba -->
+          <div class="arrowup">
+            <a href="#">
+              <img src="/src/img/images.png" title="Ir arriba" />
+            </a>
+          </div>
+          <!--  sección ordenar -->
+          <div class="ordenar col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <select class="form-control" id="sort">
+              <option value="ascending">Sort by: 001 - 151</option>
+              <option value="descending">Sort by: 151 - 001</option>
+              <option value="nameaz">Sort by: A-Z</option>
+              <option value="nameza">Sort by: Z-A</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </ul>
-  <!--SECCION CUERPO --> 
-  <div class="row">
-        <!-- seccion izquierda --> 
-        <div class="d-none d--block  d-none d-sm-block  col-md-1    col-lg-1   col-xl-1    color3"></div>
-        <!-- seccion central--> 
-        <div class="central col-12   col-sm-12          col-md-10   col-lg-10  col-xl-10    color2">
-          <div class="" id="pokemones">
-             <div class="pokemones_list row" ></div>
-             <div class="grafic" id="chart_div"></div>
-          </div>
-        </div>
-        <!-- seccion derecha --> 
-        <div class="d-none d--block  d-none d-sm-block  col-md-1     col-lg-1  col-xl-1    color3"></div>
-  </div>
-            <div id="chart_div"></div>
-      </div>
+    <!--SECCION CUERPO -->
+    <div class="row">
+      <!-- seccion izquierda -->
+      <div class="d-none d--block  d-none d-sm-block  col-md-1    col-lg-1   col-xl-1    color3"></div>
       <!-- seccion central-->
-      <div class="col-9 color2">
-        <div class="container" id="pokemones">
+      <div class="central col-12   col-sm-12          col-md-10   col-lg-10  col-xl-10    color2">
+        <div class="" id="pokemones">
           <div class="pokemones_list row"></div>
+          <div class="grafic" id="chart_div"></div>
         </div>
       </div>
-      <!-----  SECCION FOOTER ----->
-      <div class="footer color4">
-        2018 <hr>
-      </div>
-      </div>
-      <!------------------------ DIV FINAL CONTIENE TODAS LAS COLUMNAS}------------------------->
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script src="data.js"></script>
-      <script src="main.js"></script>
+      <!-- seccion derecha -->
+      <div class="d-none d--block  d-none d-sm-block  col-md-1     col-lg-1  col-xl-1    color3"></div>
+    </div>
+    <div id="chart_div"></div>
+    <!-----  SECCION FOOTER ----->
+    <div class="footer color4">
+      2018
+      <hr>
+    </div>
+  </div>
+  <!-- DIV FINAL CONTIENE TODAS LAS COLUMNAS-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
