@@ -1,6 +1,6 @@
 # Pokemon Go. 
 ## Pokedex-Kanto
-![enter image description here](https://lh3.googleusercontent.com/7F3w-GnXszMtgbHRec5KuVKPGJwFYoaeZYoBQUAIleM0qCcBVrWbljp_sVc72Qe6VhsqwRVOu77G "Portada_Pokedex")
+![enter image description here](http://subirimagen.me/uploads/20190110121629.jpg)
 
 
 ## Contexto
