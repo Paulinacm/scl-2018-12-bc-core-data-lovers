@@ -380,10 +380,10 @@ A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usu
 4. Aumentamos la cantidad de Pokemones visibles de 3 a 6 por fila en el tamaño de escritorio.
 ![](http://subirimagen.me/uploads/20190110133644.png)
 
+Para interactuar con el prototipo realizado en el programa "Figma" puedes ingresar en el siguiente link:
 
-  
-
-  
+--------------------LINK DE FIGMA
+ 
 ### Storyboard  —  Usando la App
 
 Creamos un storyboard para describir la experiencia de un usuario de la aplicación Pokedex. Mediante esta estrategia se puede explorar el producto en un contexto amplio, como si fuera parte de una narrativa mayor. Es una forma económica y efectiva de capturar, relacionar y explorar la aplicación en el mundo real.
@@ -436,9 +436,11 @@ La tipografía elegida fue... debido a que
 
 La meta del la aplicación web es crear un proceso rápido de resolución de búsqueda de un pokemon. La versión final esta disponible en versión [demo.](https://paulinacm.github.io/scl-2018-12-bc-core-data-lovers/)
 
-  
+Para realizar el diseño final, usamos el programa zeplin para obtener los colores usados en nuestro prototipo:
 
-  
+-----------------LINK DE LO QUE SEA ZEPLIN
+
+Nuestro diseño final fue sometido a un ultimo testeo para afinar detalles. Y gracias a eso decidimos incluir un "Menú stick" para que el usuario siempre tenga a su disposición el filtro y orden de los pokemones. Ademas  añadimos un icono de flecha que hace más cómodo volver al inicio de la pagina. 
 
 ****Pantalla inicio****
 
@@ -459,23 +461,11 @@ La meta del la aplicación web es crear un proceso rápido de resolución de bú
 La experiencia del usuario esta basada en algunos pasos, donde cada pantalla aparece suficiente información para poder realizar un selección, búsqueda, ordenamiento de la información de los pokemon disponibles.
 
   
-
-A partir de los testeos con usuarios y sus necesidades, se realizaron las decisiones respecto a los diseños finales de la aplicación.
-
-## Testeos
-
-  
-
-  
-
 ### Aspectos a mejorar:
+- Creacion de las tarjetas informativas de los pokemones, ya sea en formato "Modal" o "Flip" de cada tarjeta.
 
+LINK---------------------EJEMPLO
   
+  - Incorporacion de un buscador para que el pokemon pueda ser buscado por nombre o tipo.
 
-  
-
-  
-
-- List item
-
-  
+LINK----------------------EJEMPLO
