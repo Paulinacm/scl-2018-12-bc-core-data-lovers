@@ -1,206 +1,129 @@
+//ACA VA EL DOM, la interaccion, se llama al data.js
+const pokemonApi = fetch('./data/pokemon/pokemon.json');
+
+// Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
+const dataPokemon = document.querySelector("#pokemones .pokemones_list");
+
+// Creo array para guardar los objetos pokemones y no hacer constantes fetch
+let arrPokemones = []
+
+function createCard(objPokemon) { // funcion donde creo la card con la info del pokemon
+  let cardPokemon = document.createElement("div") // este div modifica todo texto de  latarjeta
+  let cardType = document.createElement("div") // este div, puede modificar toda tarjeta menos el nombre
+  let cardNum = document.createElement("div")
+  let cardTitle = document.createElement("h6") // este div modifica sol oel Titulo o nombre del pokemon
+  let imagePokemon = document.createElement("img") //coloca la imagen en tarjeta
+
+  //TARJETA
+  // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
+  // Asigno clase col-1 para que tenga ancho 1 columna, ref https://getbootstrap.com/docs/4.1/layout/grid/
+  cardPokemon.classList.add("card", "m-3", "p-3"); //m:margen ebntre cards p:borde dentro de la cards
+  // Asigno atributo SRC a Imagen
+
+  //NUMERO
+  cardNum.classList.add("card-num");
+  cardNum.innerHTML = "#" + objPokemon.num;
+  cardPokemon.appendChild(cardNum);
+
+  //IMAGEN
+  imagePokemon.setAttribute("src", objPokemon.img);
+  // Asigno atributo ALT a Imagen
+  // Utilizo valor directo del JSON porque namePokemon es un nodo tipo texto y necesito solo un string. Si utilizo namePokemon en el HTML aparecera [HTML Object]
+  imagePokemon.setAttribute("alt", "imagen de " + objPokemon.name);
+  // Asigno Clase CSS de Bootstrap para img en card
+  imagePokemon.classList.add("card-img-top");
+  // Inserto la imagen pokemon al div con clase CSS "card"
+  cardPokemon.appendChild(imagePokemon)
+
+  //NOMBRE
+  // Asigno clase CSS de Bootstrap a Título de card
+  cardTitle.classList.add("card-title");
+  // Inserto nombre del Pokemon al titulo
+  cardTitle.innerHTML = objPokemon.name; //APAREZCA EL NOMBRE(TITULO EN HTML)
+  // Inserto "card-title" al div con clase CSS "card" 
+  cardPokemon.appendChild(cardTitle);
+
+  //TIPO
+  cardType.classList.add("card-type");
+  cardType.innerHTML = objPokemon.type;
+  cardPokemon.appendChild(cardType);
+
+  return cardPokemon;
+}
+
+pokemonApi.then(result => {
+  return result.json();
+}).then(result => {
+  arrPokemones = result.pokemon;
+  arrPokemones.forEach(element => {
+    // Creo el div con la funciónn crearCard, y paso por parametro el objeto element, que contiene la información del pokemon
+    const cardPokemon = createCard(element)
+    dataPokemon.appendChild(cardPokemon);
+  });
+  createGoogleChart(arrPokemones)
+}).catch(err => {
+  // Mostrar error
+  // eslint-disable-next-line no-console
+  console.log(err);
+});
 
 
-
-
-
-
-
-
-
-
-
-
-/* ejemplo de clases
-// const resultadoNombres = nombrePokemones(data); // guardo en la constante el resultado de mi función nombrePokemones (lo que está retornando)
-//console.log(resultadoNombres);
-
-// evento click del botón
-const inputSearchText = document.getElementById('input-search-text');
-const btnSearch = document.getElementById('btn-search');
-const pokemonCardContainer = document.getElementById('pokemon-container');
-const filtersByCategories = document.getElementById('pokemon-filters');
-const sortBy = document.getElementById('pokemon-order');
-const eggPokemon = document.getElementById('egg-filter');
-const typePokemon = document.getElementById('type-filter');
-const typeData = window.POKEMON.pokemon;
-const arrkeys = Object.values(window.POKEMON.pokemon);
-
-
-const filterInArray = (inputArray) => {
-  return inputArray.map(element => {
-    return `<label class="badge-${element}">${element}</label>`;
-  }).join(' ');
-};
-
-const filterEvolution = (data, arrayEvolution) => {
-  let stringLabelSrc = [];
-  let saveObjectPreEvolution = [];
-  let saveObjectNextEvolution = [];
-
-  saveObjectPreEvolution = window.data.searchByFilter(data, arrayEvolution, 4);
-  if (saveObjectPreEvolution) {
-    saveObjectPreEvolution.map(element => {
-      element.map(ele => {
-        stringLabelSrc.push(`
-        <div class="poke-evolution col p-2">
-        <img src=${ele.img} alt=${ele.name}/>
-        <h6>${ele.name}</h6>
-        <h6>${ele.num}</h6>
-        </div>`);
-      });
-    });
-  }
-  saveObjectNextEvolution = window.data.searchByFilter(data, arrayEvolution, 5);
-  if (saveObjectNextEvolution) {
-    saveObjectNextEvolution.map(element => {
-      element.map(ele => {
-        stringLabelSrc.push(`
-        <div class="poke-evolution col p-2">
-        <img src=${ele.img} alt={name} />
-        <h6>${ele.name}</h6>
-        <h6>${ele.num}</h6>
-        </div>`);
-      });
-    });
-  }
-  return stringLabelSrc.join('');
-};
-
-const functionfilter = (pokemones) => {
-  let data = [];
-  let newGrill = [];
-  pokemonCardContainer.value = '';
-
-
-  for (let i = 0; i < pokemones.length; i++)
-    data.push(Object.assign({}, pokemones[i]));
-
-  for (let i = 0; i < data.length; i++) {
-    newGrill.push(`
-
-    <article class="col-md-3 col-sm-4 col-xs-6">
-        <a href="#modal${i}">
-        <div class="card-link col-md-12 col-sm-12 col-xs-12">
-              <div class="article-details">
-                <img class="post-image " src="${data[i].img}" />
-                  <h3 class="post-title">${data[i].name}</h3>
-                  <p class="post-description">#${data[i].num} </p>
-                  <p class="type-labels">${filterInArray(data[i].type)}</p>
-              </div>
-            </div>
-            </a>
-          </article>
-        </a>
-        <section id="modal${i}" class="modal-window">
-        <section class="modal-container">
-        <a href="#" class="arrow fixed-top text-primary m-2 ml-md-4 px-2 py-1"><</a>
-          <section class="text-center">
-          <h2 class="title-modal text-center mt-2">${data[i].name}</h2>
-          <figure class="mb-2">
-          <img src="${data[i].img}" alt="${data[i].name}">
-          </figure>
-          <div class="col-md-6 text-center text-md-center">
-          <article class="mb-2">
-          <h5> Número en la pokedex: </h5>
-          <span class="text-size"> # ${data[i].num}</span>
-          </article>
-          <article class="mb-2">
-          <h5 class="mb-0">Tipo:</h5>
-          <p> ${filterInArray(data[i].type)}</p>
-          </article>
-          <article class="mb-2">
-          <h5>Nombre de caramelos:</h5>
-          <span class="text-size">${data[i].candy}</span>
-          </article>
-          <article class="mb-2">
-          <h5 class="mb-0">Debilidades:</h5>
-          <p> ${filterInArray(data[i].weaknesses)}</p>
-          </article>
-          </section>
-          <section class="text-center">
-          <h5>Evoluciones</h5>
-          <div class="col p-2">
-          <div>${filterEvolution(window.POKEMON.pokemon, data[i].num)}
-          </div>
-          </div>
-          </div>
-          </section>
-          </section>
-          </section>`);
-  }
-  pokemonCardContainer.innerHTML = newGrill.join('');
-};
-functionfilter(arrkeys);
-
-
-const functionListenFilterOrder = () => {
-  const listenSortBy = sortBy.options[sortBy.selectedIndex].value;
-  const listenFiltersByCategories = filtersByCategories.options[filtersByCategories.selectedIndex].value;
-  const arrayInputFilter = window.data.searchByFilter(arrkeys, inputSearchText.value, parseInt(listenFiltersByCategories[0]));
-  functionfilter(window.data.sortData(arrayInputFilter, parseInt(listenSortBy[0]), parseInt(listenSortBy[1])));
-  return 1;
-};
-
-document.getElementById('button-percentage').addEventListener('click', () => {
-  const arrTypePokemon = ['Agua', 'Bicho', 'Dragon', 'Electrico', 'Fantasma', 'Fuego', 'Hielo', 'Lucha', 'Normal', 'Hierba', 'Psiquico', 'Roca', 'Tierra', 'Veneno', 'Volador'];
-  const arrPromedio2 = window.data.stats(typeData, arrTypePokemon);
-
-
+//funcion para crear el googlechart
+function createGoogleChart(arrayPokemones) {
+  let filterType = document.getElementById("filterType").value
+  // Copie los JS desde https://developers.google.com/chart/interactive/docs/quick_start
+  // Automatice el conteo de lementos y asigne nuevos valores al chart
+  // Load the Visualization API and the corechart package.
   google.charts.load('current', {
     'packages': ['corechart']
   });
+
   google.charts.setOnLoadCallback(drawChart);
 
   function drawChart() {
-    const data = google.visualization.arrayToDataTable([
-      ['Tipo de Pokémon', '% del total', {
-        role: 'style'
-      }],
-      ['Agua', arrPromedio2[0], 'color: #414449'],
-      ['Hierba', arrPromedio2[1], 'color: #558720'],
-      ['Tierra', arrPromedio2[2], 'color: #671502'],
-      ['Hielo', arrPromedio2[3], 'color: #6c72f3'],
-      ['Bicho', arrPromedio2[4], 'color: #16d45d'],
-      ['Psíquico', arrPromedio2[5], 'color: #af5ed9'],
-      ['Fantasma', arrPromedio2[6], 'color: #612baa'],
-      ['Dragón', arrPromedio2[7], 'color: #612baa'],
-      ['Veneno', arrPromedio2[8], 'color: #4d215e'],
-      ['Lucha', arrPromedio2[9], 'color: #fc1f1f'],
-      ['Fuego', arrPromedio2[10], 'color: #ff8400'],
-      ['Volador', arrPromedio2[11], 'color: #45a4a3'],
-      ['Roca', arrPromedio2[12], 'color: #a2def4'],
-      ['Eléctrico', arrPromedio2[13], 'color: #faf329'],
-      ['Normal', arrPromedio2[14], 'color: #a8aaae']
+
+    // Create the data table.
+    let data = new google.visualization.DataTable();
+    let type1Elem = 0
+    let type2Elem = 0
+    //para eliminar let rowsData = []
+    arrayPokemones.forEach(element => {
+      if (element.type.length === 1) {
+        type1Elem++
+      } else if (element.type.length === 2) {
+        type2Elem++
+      }
+    });
+    data.addColumn('string', 'Tipo');
+    data.addColumn('number', 'Cantidad');
+    data.addRows([
+      ['Pertenece únicamente a 1 tipo de pokemon', type1Elem],
+      ['Pertenece a 2 tipos de pokemon', type2Elem],
     ]);
 
-    const options = {
-      title: 'Porcentaje de Pokemones por Tipo'
+    if (filterType == "") {
+      filterType = " generales"
+    } else {
+      filterType = " para Pokemones tipo " + filterType
+    }
+    // Set chart options
+    let options = {
+      'legend': 'top',
+      'title': 'Poke estadísticas' + filterType,
+      'width': 300,
+      'height': 500,
+      'chartArea': {
+        left: "5%",
+        bottom: 0,
+        width: "90%"
+      }
     };
 
-    const chart = new google.visualization.PieChart(document.getElementById('pokemon-container'));
-    document.getElementById('pokemon-container').classList.add('min-heigth-table');
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
   }
-});
+}
 
-typePokemon.addEventListener('change', () => {
-  const typeofFilter = 'Type';
-  const arrTemp = window.data.filterData(typeData, typeofFilter, typePokemon.value);
-  functionfilter(window.data.filterData(arrTemp, typeofFilter, typePokemon.value));
-});
-
-eggPokemon.addEventListener('change', () => {
-  const typeofFilter = 'Egg';
-  const arrTemp = window.data.filterData(typeData, typeofFilter, eggPokemon.value);
-  functionfilter(window.data.filterData(arrTemp, 'Type', typePokemon.value));
-});
-
-
-const functionMain = () => {
-  functionListenFilterOrder();
-  filtersByCategories.addEventListener('change', functionListenFilterOrder);
-  sortBy.addEventListener('change', functionListenFilterOrder);
-  btnSearch.addEventListener('click', functionListenFilterOrder);
-};
-
-functionMain();
+document.getElementById("filterType").addEventListener('change', drawPokemones)
+document.getElementById("sort").addEventListener('change', drawPokemones)
