@@ -17,6 +17,11 @@
     "eslint": "^5.11.1",
     "htmlhint": "^0.10.1",
     "jest": "^23.6.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.3.0"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
   }
 }
