@@ -1,4 +1,5 @@
 // AQUI VA LA LOGICA. funciones filtrar, ordenar, calcular
+//ACA VA EL DOM, la interaccion, se llama al data.js
 const pokemonApi = fetch('./data/pokemon/pokemon.json');
 
 // Seleccino  el PRIMER DIV que contenga "pokemones_list" en su atributo CLASS, y que encuentre adentro de un div con id="pokemones"
@@ -26,7 +27,7 @@ function createCard(objPokemon) { // funcion donde creo la card con la info del 
   cardPokemon.appendChild(cardNum);
 
   //IMAGEN
-  imagePokemon.setAttribute("src", objPokemon.img,);
+  imagePokemon.setAttribute("src", objPokemon.img);
   // Asigno atributo ALT a Imagen
   // Utilizo valor directo del JSON porque namePokemon es un nodo tipo texto y necesito solo un string. Si utilizo namePokemon en el HTML aparecera [HTML Object]
   imagePokemon.setAttribute("alt", "imagen de " + objPokemon.name);
@@ -134,6 +135,7 @@ function createGoogleChart(arrayPokemones) {
   // Load the Visualization API and the corechart package.
   google.charts.load('current', {
     'packages': ['corechart']
+
   });
 
   // Set a callback to run when the Google Visualization API is loaded.
@@ -148,16 +150,13 @@ function createGoogleChart(arrayPokemones) {
     let data = new google.visualization.DataTable();
     let type1Elem = 0
     let type2Elem = 0
-    let type2More = 0
-    let rowsData = []
+    //para eliminar let rowsData = []
     arrayPokemones.forEach(element => {
       if (element.type.length === 1) {
         type1Elem++
       } else if (element.type.length === 2) {
         type2Elem++
-      } else {
-        type2More++
-      }
+      } 
     });
     data.addColumn('string', 'Tipo');
     data.addColumn('number', 'Cantidad');
@@ -191,7 +190,7 @@ function createGoogleChart(arrayPokemones) {
 }
 
 // Función que se ejecuta al cambiar filtro u orden
-function drawPokemones(){
+function drawPokemones() {
   // Creo un array vacío, que más adelante utilizaré para recibir los arra ordenados por las funciones
   let arrPokemonesDraw = []
   // obtengo que opción de orden esta seleccionada
@@ -218,7 +217,6 @@ function drawPokemones(){
       break;
   }
 
-  
   if (optFilter === "") {
     // si no hay filtro seleccionado, utilizo array original de pokemones
     arrPokemonesDraw = arrPokemones
@@ -226,8 +224,8 @@ function drawPokemones(){
     // Si hay filtro seleccionado, utilizo la función para filtrar el array ya ordenado
     arrPokemonesDraw = filterPokemon(arrPokemonesDraw, optFilter)
   }
-  
-  
+
+
   dataPokemon.innerHTML = ""
   arrPokemonesDraw.forEach(element => {
     const cardPokemon = createCard(element)
@@ -237,5 +235,5 @@ function drawPokemones(){
   createGoogleChart(arrPokemonesDraw)
 }
 
-document.getElementById("filterType").addEventListener('change',drawPokemones)
+document.getElementById("filterType").addEventListener('change', drawPokemones)
 document.getElementById("sort").addEventListener('change', drawPokemones)
