@@ -100,7 +100,17 @@ function drawPokemones() {
   arrPokemonesDraw.forEach(element => {
     const cardPokemon = createCard(element)
     dataPokemon.appendChild(cardPokemon);
+    
   });
 
   createGoogleChart(arrPokemonesDraw)
 }
+
+window.data = {
+  sortNumAsc,
+  sortNumDesc,
+  sortNameAz,
+  sortNameZa,
+  filterPokemon,
+  drawPokemones,
+};
