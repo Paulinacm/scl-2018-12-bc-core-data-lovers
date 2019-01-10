@@ -10,7 +10,7 @@ describe('dataLover', () => {
 });
 
 
-/* el ejemplo del trabajo 
+/* ejemplo del trabajo 
 require('../src/data.js');
 
 const input = [{
@@ -331,3 +331,4 @@ describe('data.stats', () => {
     expect(window.data.stats(inputStats, inputStats2)).toEqual([3]);
   });
 });
+*/
