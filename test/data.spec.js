@@ -416,3 +416,5 @@ describe('data.stats', () => {
     expect(window.data.stats(inputStats, inputStats2)).toEqual([1.9867549668874174]);
   });
 });
+
+*/
