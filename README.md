@@ -619,12 +619,10 @@ insertar aqui storyboard
   
 
 ### Paleta de Colores
-
+![enter image description here](https://lh3.googleusercontent.com/5BY3LmUz3_WbQNH_4Iy1mybIyo4d6CRYtjWCP6eTYsEJp0dZA7cCIg5WiG0O968k2xRqttwrj-Ai "paleta de colores")
   
 
-  
-
-Elegimos estos colores porque están todos asociados a Pokemon Go.
+Elegimos estos colores porque están todos asociados a Pokemon Go, de tal manera que el usuario al acceder a la página inmediatamente entienda que se trata de una aplicación asociada al juego.
 
   
 
@@ -728,3 +726,4 @@ La experiencia del usuario esta basada en algunos pasos, donde cada pantalla apa
 
 - Incorporación de un buscador para que el pokemon pueda ser buscado por nombre o tipo.
 - Finalizar npm testing.
+
