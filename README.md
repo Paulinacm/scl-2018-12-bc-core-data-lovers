@@ -578,9 +578,9 @@ A partir del testeo previo se decidieron realizar algunas modificaciones al prot
 
 1. Creación de una portada personalizada para la aplicación.
 
-2. Reducción edl tamaño de la portada y así hacer entender al usuario que abajo hay mas información y que no solo se trata de una portada y un menú de filtrado.
+2. Reducción del tamaño de la portada y así hacer entender al usuario que abajo hay mas información y que no solo se trata de una portada y un menú de filtrado.
 
-3. Se le agrego un conteo de la cantidad de pokemones que existe de cada elemento.
+3. Se le agrego un contador de la cantidad de pokemones que existe de cada elemento.
 
 ![](http://subirimagen.me/uploads/20190110132027.png)
 
@@ -598,9 +598,7 @@ A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usu
 
 Para interactuar con el prototipo realizado en el programa "Figma" puedes ingresar en el siguiente link:
 
-  
-
---------------------LINK DE FIGMA
+https://www.figma.com/file/JdesPvu3vjVuYDpaFZlJQ1Iy/Proyecto-2-Pokemon?node-id=211%3A5
 
 ### Storyboard  —  Usando la App
 
@@ -614,7 +612,7 @@ Creamos un storyboard para describir la experiencia de un usuario de la aplicaci
 
   
 
-insertar aqui storyboard
+insertar aqui storyboard 
 
   
 
