@@ -624,7 +624,9 @@ insertar aqui storyboard
   
 
 ### Paleta de Colores
-![enter image description here](https://lh3.googleusercontent.com/5BY3LmUz3_WbQNH_4Iy1mybIyo4d6CRYtjWCP6eTYsEJp0dZA7cCIg5WiG0O968k2xRqttwrj-Ai "paleta de colores")
+
+![enter image description here](https://lh3.googleusercontent.com/5BY3LmUz3_WbQNH_4Iy1mybIyo4d6CRYtjWCP6eTYsEJp0dZA7cCIg5WiG0O968k2xRqttwrj-Ai  "paleta de colores")
+
   
 
 Elegimos estos colores porque están todos asociados a Pokemon Go, de tal manera que el usuario al acceder a la página inmediatamente entienda que se trata de una aplicación asociada al juego.
@@ -633,7 +635,11 @@ Elegimos estos colores porque están todos asociados a Pokemon Go, de tal manera
 
   
 
-![](https://lh3.googleusercontent.com/PGqwjJkvauOfyHzOTiczm65nDvGzVF4O9fHHytEKXrDcQyawJlbUlXK86dryfI4LumXierdq2qcuOsDWcRjrT0IOgIn-DaM6jHiuXPTHPmKTgKgfsSIhLsUWPvwIK8MPp1wAnSIl)
+  
+
+
+
+  
 
   
 
