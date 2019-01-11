@@ -586,19 +586,24 @@ A partir del testeo previo se decidieron realizar algunas modificaciones al prot
 
 A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usuario se centre en el logo. Se creó la imagen de "KANTO" simulando el logo principal y añadimos un Pokémon para llamar la atención y una imagen de césped para simular que el Pokémon y el logo estuvieran en un plano principal.
 
-3. Sacamos el botón "Ver listado Completo" y así se muestra todos los Pokemones de la Región automáticamente para luego filtrar sin problema.
+
+4. Sacamos el botón "Ver listado Completo" y así se muestra todos los Pokemones de la Región automáticamente para luego filtrar sin problema.
 
   
 
-4. Aumentamos la cantidad de Pokemones visibles de 3 a 6 por fila en el tamaño de escritorio.
+  
+
+5. Aumentamos la cantidad de Pokemones visibles de 3 a 6 por fila en el tamaño de escritorio.
+
+  
 
 ![](http://subirimagen.me/uploads/20190110133644.png)
 
   
 
-Para interactuar con el prototipo realizado en el programa "Figma" puedes ingresar en el siguiente link:
+  
 
-https://www.figma.com/file/JdesPvu3vjVuYDpaFZlJQ1Iy/Proyecto-2-Pokemon?node-id=211%3A5
+Para interactuar con el prototipo realizado en el programa ["Figma"](https://www.figma.com/file/JdesPvu3vjVuYDpaFZlJQ1Iy/Proyecto-2-Pokemon?node-id=211:5) puedes ingresar en el siguiente link:
 
 ### Storyboard  —  Usando la App
 
