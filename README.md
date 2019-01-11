@@ -467,7 +467,7 @@ La experiencia del usuario esta basada en algunos pasos, donde cada pantalla apa
 
 <p align="center">
 
-<img src='http://subirimagen.me/uploads/20190110191104.gif'/>
+<img src="http://subirimagen.me/uploads/20190110191104.gif" width="300" height="300"/>
 
 
   
