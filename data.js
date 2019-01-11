@@ -60,7 +60,6 @@ function filterPokemon(arrayPokemones, paramFilter) {
   return arrFiltrado
 }
 
-
 window.data = {
   sortNumAsc,
   sortNumDesc,
