@@ -329,6 +329,7 @@ Versión Celular
 
 <img src='https://lh3.googleusercontent.com/JJcGwZqoqdK4Z0ouCgqyvDoHejbjhsyiaXFIqi3F-tJ08sEiLmfiVsVmNY3JZyIe9thYgmAK-eZZ'  />
 
+
   
 
   
@@ -438,7 +439,10 @@ La meta del la aplicación web es crear un proceso rápido de resolución de bú
 
 Para realizar el diseño final, usamos el programa zeplin para obtener los colores usados en nuestro prototipo:
 
------------------LINK DE LO QUE SEA ZEPLIN
+<p align="center">
+
+<img src="http://subirimagen.me/uploads/20190110194506.png" width="800" height="300"/>
+
 
 Nuestro diseño final fue sometido a un ultimo testeo para afinar detalles. Y gracias a eso decidimos incluir un "Menú stick" para que el usuario siempre tenga a su disposición el filtro y orden de los pokemones. Ademas  añadimos un icono de flecha que hace más cómodo volver al inicio de la pagina. 
 
@@ -464,7 +468,11 @@ La experiencia del usuario esta basada en algunos pasos, donde cada pantalla apa
 ### Aspectos a mejorar:
 - Creacion de las tarjetas informativas de los pokemones, ya sea en formato "Modal" o "Flip" de cada tarjeta.
 
-LINK---------------------EJEMPLO
+<p align="center">
+
+<img src="http://subirimagen.me/uploads/20190110191104.gif" width="300" height="300"/>
+
+
   
   - Incorporacion de un buscador para que el pokemon pueda ser buscado por nombre o tipo.
 
