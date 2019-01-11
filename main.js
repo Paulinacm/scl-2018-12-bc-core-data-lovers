@@ -5,14 +5,14 @@ const pokemonApi = fetch('./data/pokemon/pokemon.json');
 const dataPokemon = document.querySelector("#pokemones .pokemones_list");
 
 // Creo array para guardar los objetos pokemones y no hacer constantes fetch
-let arrPokemones = []
+let arrPokemones = [];
 
 function createCard(objPokemon) { // funcion donde creo la card con la info del pokemon
-  let cardPokemon = document.createElement("div") // este div modifica todo texto de  latarjeta
-  let cardType = document.createElement("div") // este div, puede modificar toda tarjeta menos el nombre
-  let cardNum = document.createElement("div")
-  let cardTitle = document.createElement("h6") // este div modifica sol oel Titulo o nombre del pokemon
-  let imagePokemon = document.createElement("img") //coloca la imagen en tarjeta
+  let cardPokemon = document.createElement("div"); // este div modifica todo texto de  latarjeta
+  let cardType = document.createElement("div"); // este div, puede modificar toda tarjeta menos el nombre
+  let cardNum = document.createElement("div");
+  let cardTitle = document.createElement("h6"); // este div modifica sol oel Titulo o nombre del pokemon
+  let imagePokemon = document.createElement("img"); //coloca la imagen en tarjeta
 
   //TARJETA
   // Asigno Clase CSS de Bootstrap a DIV, una clase "card" para que tenga la apariencia del componente CARDm, ref https://getbootstrap.com/docs/4.1/components/card/
@@ -33,7 +33,7 @@ function createCard(objPokemon) { // funcion donde creo la card con la info del 
   // Asigno Clase CSS de Bootstrap para img en card
   imagePokemon.classList.add("card-img-top");
   // Inserto la imagen pokemon al div con clase CSS "card"
-  cardPokemon.appendChild(imagePokemon)
+  cardPokemon.appendChild(imagePokemon);
 
   //NOMBRE
   // Asigno clase CSS de Bootstrap a Título de card
@@ -57,10 +57,10 @@ pokemonApi.then(result => {
   arrPokemones = result.pokemon;
   arrPokemones.forEach(element => {
     // Creo el div con la funciónn crearCard, y paso por parametro el objeto element, que contiene la información del pokemon
-    const cardPokemon = createCard(element)
+    const cardPokemon = createCard(element);
     dataPokemon.appendChild(cardPokemon);
   });
-  createGoogleChart(arrPokemones)
+  createGoogleChart(arrPokemones);
 }).catch(err => {
   // Mostrar error
   // eslint-disable-next-line no-console
@@ -71,7 +71,7 @@ pokemonApi.then(result => {
 
 //funcion para crear el googlechart
 function createGoogleChart(arrayPokemones) {
-  let filterType = document.getElementById("filterType").value
+  let filterType = document.getElementById("filterType").value;
   // Copie los JS desde https://developers.google.com/chart/interactive/docs/quick_start
   // Automatice el conteo de lementos y asigne nuevos valores al chart
   // Load the Visualization API and the corechart package.
@@ -121,7 +121,7 @@ function createGoogleChart(arrayPokemones) {
     };
 
     // Instantiate and draw our chart, passing in some options.
-    var chart =new google.visualization.PieChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
     chart.draw(data, options);
   }
 }
@@ -129,25 +129,25 @@ function createGoogleChart(arrayPokemones) {
 // Función que se ejecuta al cambiar filtro u orden
 function drawPokemones() {
   // Creo un array vacío, para recibir los array ordenados por las funciones
-  let arrPokemonesDraw = []
+  let arrPokemonesDraw = [];
   // obtengo que opción de orden esta seleccionada
-  let optSort = document.getElementById("sort").value
+  let optSort = document.getElementById("sort").value;
   // obtengo que opción de filtro esta seleccionada
-  let optFilter = document.getElementById("filterType").value
+  let optFilter = document.getElementById("filterType").value;
 
   // Otengo array ordenado para cada tipo de filtro
   switch (optSort) {
     case "nameaz":
-      arrPokemonesDraw = sortNameAz(arrPokemones)
+      arrPokemonesDraw = sortNameAz(arrPokemones);
       break;
     case "nameza":
-      arrPokemonesDraw = sortNameZa(arrPokemones)
+      arrPokemonesDraw = sortNameZa(arrPokemones);
       break;
     case "ascending":
-      arrPokemonesDraw = sortNumAsc(arrPokemones)
+      arrPokemonesDraw = sortNumAsc(arrPokemones);
       break;
     case "descending":
-      arrPokemonesDraw = sortNumDesc(arrPokemones)
+      arrPokemonesDraw = sortNumDesc(arrPokemones);
       break;
     default:
       arrPokemonesDraw = arrPokemones;
