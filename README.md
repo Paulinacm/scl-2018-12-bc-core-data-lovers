@@ -1,6 +1,7 @@
+
 # Pokemon Go. 
 ## Pokedex-Kanto
-![enter image description here](https://lh3.googleusercontent.com/7F3w-GnXszMtgbHRec5KuVKPGJwFYoaeZYoBQUAIleM0qCcBVrWbljp_sVc72Qe6VhsqwRVOu77G "Portada_Pokedex")
+![enter image description here](http://subirimagen.me/uploads/20190110121629.jpg)
 
 
 ## Contexto
@@ -361,34 +362,28 @@ Estas fueron algunas de las respuestas que usamos para ir mejorando el prototipo
 
 - Usuarios Daniel y Carla: Se ven muy grandes los Pokemones en pantalla escritorio y pienso que para ir cargando mas Pokemones con el boton "Cargar más" seria muy tedioso ya que solo va mostrando de seis en seis.
 
-- Usuario Camila: La pagina no indica en ningun lado que los pokemones son de la Region de Kanto.
+- Usuario Camila: La pagina no indica en ningún lado que los pokemones son de la Region de Kanto.
 
 - Usuario Carla: La portada se me hace muy simple solo tiene el logo Pokemón y una imagen de fondo. Quizás podrían colocar una  imagen de algún Pokemon.
 
  
-A partir del testeo previo se decidieron realizar algunas modificaciones al prototipo:
+A partir del testeo previo se decidieron realizar algunas modificaciones al prototipo inicial:
 
- 1. Creación de una portada con imagen y lugar de la región.
- 2. Reducir el largo de la portada o agregar un indicador (Botón o flecha) que indique que abajo hay más información.
- 3. Sacar el botón "Cargar más" y que los Pokemones se muestren todos automáticamente y en un menor tamaño.
-
+ 1. Creación de una portada personalizada para la aplicación.
+ 2. Reducción edl tamaño de la portada y así hacer entender al usuario que abajo hay mas información  y  que no solo se trata de una portada y un menú de filtrado.
+ 3. Se le agrego un conteo de la cantidad de pokemones que existe de cada elemento.
+![](http://subirimagen.me/uploads/20190110132027.png)
+A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usuario se centre en el logo. Se creó la imagen de "KANTO" simulando el logo principal y añadimos un Pokémon para llamar la atención y una imagen de césped para simular que el Pokémon y el logo estuvieran en un plano principal.
   
+ 3. Sacamos el botón "Ver listado Completo" y así se muestra todos los  Pokemones de la Región automáticamente para luego filtrar sin problema.
 
-Estas son algunas imágenes de los cambios realizados:
+4. Aumentamos la cantidad de Pokemones visibles de 3 a 6 por fila en el tamaño de escritorio.
+![](http://subirimagen.me/uploads/20190110133644.png)
 
-![](http://subirimagen.me/uploads/20190108141228.jpg)
+Para interactuar con el prototipo realizado en el programa "Figma" puedes ingresar en el siguiente link:
 
-A la imagen de fondo se le aplico un mayor desenfoque para que la mirada del usuario se centre en el logo. Se creó la imagen de "KANTO" simulando el logo principal y añadimos un Pokémon para llamar la atención y una imagen png de pasto para simular que el Pokémon y el logo estuvieran en un plano principal.
-
-  
-
-<p align="center">
-
-<img src='http://subirimagen.me/uploads/20190108143136.jpg'  />
-
-Se le agrego un conteo de la cantidad de pokemones que existe de cada elemento.
-
-  
+--------------------LINK DE FIGMA
+ 
 ### Storyboard  —  Usando la App
 
 Creamos un storyboard para describir la experiencia de un usuario de la aplicación Pokedex. Mediante esta estrategia se puede explorar el producto en un contexto amplio, como si fuera parte de una narrativa mayor. Es una forma económica y efectiva de capturar, relacionar y explorar la aplicación en el mundo real.
@@ -441,9 +436,11 @@ La tipografía elegida fue... debido a que
 
 La meta del la aplicación web es crear un proceso rápido de resolución de búsqueda de un pokemon. La versión final esta disponible en versión [demo.](https://paulinacm.github.io/scl-2018-12-bc-core-data-lovers/)
 
-  
+Para realizar el diseño final, usamos el programa zeplin para obtener los colores usados en nuestro prototipo:
 
-  
+-----------------LINK DE LO QUE SEA ZEPLIN
+
+Nuestro diseño final fue sometido a un ultimo testeo para afinar detalles. Y gracias a eso decidimos incluir un "Menú stick" para que el usuario siempre tenga a su disposición el filtro y orden de los pokemones. Ademas  añadimos un icono de flecha que hace más cómodo volver al inicio de la pagina. 
 
 ****Pantalla inicio****
 
@@ -464,28 +461,11 @@ La meta del la aplicación web es crear un proceso rápido de resolución de bú
 La experiencia del usuario esta basada en algunos pasos, donde cada pantalla aparece suficiente información para poder realizar un selección, búsqueda, ordenamiento de la información de los pokemon disponibles.
 
   
-
-A partir de los testeos con usuarios y sus necesidades, se realizaron las decisiones respecto a los diseños finales de la aplicación.
-
-## Testeos
-
-  
-
-  
-
 ### Aspectos a mejorar:
+- Creacion de las tarjetas informativas de los pokemones, ya sea en formato "Modal" o "Flip" de cada tarjeta.
 
+LINK---------------------EJEMPLO
   
+  - Incorporacion de un buscador para que el pokemon pueda ser buscado por nombre o tipo.
 
-  
-
-  
-
-- List item
-
-  
-
--
-
- 
-*********
+LINK----------------------EJEMPLO
