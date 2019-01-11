@@ -329,6 +329,7 @@ Versión Celular
 
 <img src='https://lh3.googleusercontent.com/JJcGwZqoqdK4Z0ouCgqyvDoHejbjhsyiaXFIqi3F-tJ08sEiLmfiVsVmNY3JZyIe9thYgmAK-eZZ'  />
 
+
   
 
   
@@ -464,7 +465,11 @@ La experiencia del usuario esta basada en algunos pasos, donde cada pantalla apa
 ### Aspectos a mejorar:
 - Creacion de las tarjetas informativas de los pokemones, ya sea en formato "Modal" o "Flip" de cada tarjeta.
 
-LINK---------------------EJEMPLO
+<p align="center">
+
+<img src='http://subirimagen.me/uploads/20190110191104.gif'/>
+
+
   
   - Incorporacion de un buscador para que el pokemon pueda ser buscado por nombre o tipo.
 
