@@ -439,7 +439,10 @@ La meta del la aplicación web es crear un proceso rápido de resolución de bú
 
 Para realizar el diseño final, usamos el programa zeplin para obtener los colores usados en nuestro prototipo:
 
------------------LINK DE LO QUE SEA ZEPLIN
+<p align="center">
+
+<img src="http://subirimagen.me/uploads/20190110194506.png" width="800" height="300"/>
+
 
 Nuestro diseño final fue sometido a un ultimo testeo para afinar detalles. Y gracias a eso decidimos incluir un "Menú stick" para que el usuario siempre tenga a su disposición el filtro y orden de los pokemones. Ademas  añadimos un icono de flecha que hace más cómodo volver al inicio de la pagina. 
 
